@@ -1,0 +1,105 @@
+filetype:php "Notice: Undefined variable: data in" -forum
+inurl:jboss filetype:log -github.com
+inurl:/php-errors.log filetype:log
+"dispatch=debugger."
+"syd_apply.cfm"
+inurl:?wp-commentsrss2.php -git
+"CakeRoutingException" -site:github.com -site:stackoverflow.com -site:cakephp.org"
+inurl:".php?id=" "You have an error in your SQL syntax"
+intitle:"CGIWrap Error"
+"--- WebView Livescope Http Server Error ---" -git
+"Below is a rendering of the page up to the first error." ext:xml
+inurl:index of driver.php?id=
+intext:"expects parameter 1 to be resource, boolean given" filetype:php
+intitle:"Struts Problem Report" intext:"development mode is enabled."
+inurl:"id=" & intext:"MySQL Error: 1064" & "Session halted."
+intitle:"DSM Terminator [ ABORT ]" | inurl:"./com.sap.portal.dsm.Terminator"
+inurl:/siteminderagent/ | app:"Error 404: java.io.FileNotFoundException: SRVE0190E: File not found: /siteminderagent/"
+inurl:/smpwservices.fcc | "/lm_private/CkeSetter.aspx"
+inurl:/console-selfservice/common/scripts/calendar/ipopeng.htm
+inurl:/nesp/app
+inurl:/SAML2/SOAP/ | inurl:/SAML2/POST
+inurl:/uniquesig0/ or inurl:/uniquesig0/InternalSite/
+inurl:index.php?id= intext:"mysql_fetch_array"
+intitle:Content Server Error IdcService=DOC_INFO
+intitle:"Whoops! There was an error."
+intitle:Error-javax.el.ELException+error+xhtml
+intitle:Error Page pageWrapper.jsp?
+intext:"Unexpected Problem Occurred!" ext:aspx
+intext:"Access denied for" intitle:"Shopping cart"
+"[function.getimagesize]: failed to open stream: No such file or directory in"
+inurl:advsearch.php?module= & intext:sql syntax
+intext:"Fatal error: Class 'Red_Action' not found in"
+"CHARACTER_SETS" "COLLATION_CHARACTER_SET_APPLICABILITY"
+inurl:"*.php?*=*.php" intext:"Warning: include" -inurl:.html -site:"php.net" -site:"stackoverflow.com" -inurl:"*forums*"
+inurl:"index.php?m=content+c=rss+catid=10"
+"plugins/wp-db-backup/wp-db-backup.php"
+allintext:"fs-admin.php"
+intitle:"Apache Tomcat" "Error Report"
+"Warning: mysql_connect(): Access denied for user: '*@*" "on line" -help -forum
+"Warning: Division by zero in" "on line" -forum
+"Unable to jump to row" "on MySQL result index" "on line"
+"Warning: Bad arguments to (join|implode) () in" "on line" -help -forum
+"Warning:" "failed to open stream: HTTP request failed" "on line"
+filetype:asp + "[ODBC SQL"
+"Warning:" "SAFE MODE Restriction in effect." "The script whose uid is" "is not allowed to access owned by uid 0 in" "on line"
+"Warning: Supplied argument is not a valid File-Handle resource in"
+"There seems to have been a problem with the" " Please try again by clicking the Refresh button in your web browser."
+"Parse error: parse error, unexpected T_VARIABLE" "on line" filetype:php
+intitle:"Default PLESK Page"
+"[SQL Server Driver][SQL Server]Line 1: Incorrect syntax near" -forum -thread -showthread
+intitle:"404 SC_NOT_FOUND"
+intext:"Error Message : Error loading required libraries."
+"Warning: mysql_query()" "invalid query"
+intitle:Configuration.File inurl:softcart.exe
+"The script whose uid is " "is not allowed to access"
+databasetype. Code : 80004005. Error Description :
+"Warning: pg_connect(): Unable to connect to PostgreSQL server: FATAL"
+filetype:log "PHP Parse error" | "PHP Warning" | "PHP Error"
+"error found handling the request" cocoon filetype:xml
+"ASP.NET_SessionId" "data source="
+"ORA-12541: TNS:no listener" intitle:"error occurred"
+filetype:php inurl:"logging.php" "Discuz" error
+"Internal Server Error" "server at"
+PHP application warnings failing "include_path"
+intext:"Warning: Failed opening" "on line" "include_path"
+intitle:"Error Occurred While Processing Request"
+intitle:"htsearch error" ht://Dig error
+intitle:"Error using Hypernews" "Server Software"
+"Invision Power Board Database Error"
+intitle:"Execution of this script not permitted"
+intitle:"Error Occurred" "The error occurred in" filetype:cfm
+filetype:asp "Custom Error Message" Category Source
+"Fatal error: Call to undefined function" -reply -the -next
+warning "error on line" php sablotron
+"A syntax error has occurred" filetype:ihtml
+"Supplied argument is not a valid PostgreSQL result"
+"PostgreSQL query failed: ERROR: parser: parse error"
+"Incorrect syntax near"
+"Unclosed quotation mark before the character string"
+"Syntax error in query expression " -the
+intitle:"the page cannot be found" inetmgr
+"ORA-00933: SQL command not properly ended"
+"ORA-00921: unexpected end of SQL command"
+"ORA-00936: missing expression"
+"Supplied argument is not a valid MySQL result resource"
+"You have an error in your SQL syntax near"
+intitle:"the page cannot be found" "2004 microsoft corporation"
+"An illegal character has been found in the statement" -"previous message"
+intitle:"500 Internal Server Error" "server at"
+intitle:"Under construction" "does not currently have"
+"mySQL error with query"
+"Can't connect to local" intitle:warning
+"access denied for user" "using password"
+"Warning: Cannot modify header information - headers already sent"
+"Incorrect syntax near" -the
+An unexpected token "END-OF-STATEMENT" was found
+intitle:"the page cannot be found" "internet information services"
+"detected an internal error [IBM][CLI Driver][DB2/6000]"
+inurl:sitebuilderpictures
+inurl:sitebuilderfiles
+inurl:sitebuildercontent
+"ORA-00921: unexpected end of SQL command"
+"Chatologica MetaSearch" "stack tracking:"
+"supplied argument is not a valid MySQL result resource"
+"Error Diagnostic Information" intitle:"Error Occurred While"

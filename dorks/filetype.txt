@@ -1,0 +1,12 @@
+pdf
+xml
+xls
+txt
+xlsx
+doc
+docx
+sql
+zip
+rar
+iso
+epub

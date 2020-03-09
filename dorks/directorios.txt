@@ -1,0 +1,256 @@
+intitle:"index of" admin
+intitle:"index of" drupal
+intitle:"Index of" wp-admin
+intitle:"Index of" phpmyadmin
+intitle:"Index of" inurl:wp-json/oembed
+intitle:index.of.?.sql
+inurl: /filemanager/dialog.php
+"Index of" inurl:webalizer
+"Index of" inurl:phpmyadmin
+"Index of" inurl:htdocs inurl:xampp
+intitle:"Index of" wp-content
+intitle:"Index of" wp-config
+intitle:"Index of" portal
+intitle:"Index of" public
+intitle:"Index of" phpinfo.php
+"Index of" inurl:config inurl:production
+Index of / *.ovpn
+Inurl : /list/hdd1
+"To Parent Directory" AND "dir>" AND "web.config"
+intitle:"index of" intext:"Includes wordpress"
+intitle:"index of" intext:"Includes
+filetype:svn -gitlab -github inurl:"/.svn"
+filetype:git -github.com inurl:"/.git"
+inurl:bc.googleusercontent.com intitle:index of
+intitle:"index of" scada
+"/var/cache/registry/"
+type:mil inurl:ftp ext:pdf | ps
+allintitle: "index of/admin"
+intitle: "index of" "./" "./bitcoin"
+intitle:"index of" ".cpanel/caches/config/"
+intitle: "Index of" intext:log
+intitle:"Directory Listing For" "Filename" intext:Tomcat/5.0.28
+intitle: "index of" "includes"
+intitle:"index of" "db"
+inurl:/uploads/wc-logs/
+inurl:/files/contao
+inurl:typo3conf/l10n/
+intitle:"index of" ".dockerignore"
+intitle:"index of" "/aws.s3/"
+intitle:"index of" ".pem"
+intitle:"index of" "/bitcoin/"
+"description" & "size" intitle:"index of" "owncloud"
+"Last modified" intitle:"index of" "dropbox"
+intitle:"index of" "/Windows/Recent" | "/Windows/History/"
+intitle:"index of" "WindowsCookies"
+intitle:"index of" "Application Data/Microsoft/Credentials"
+"sasl_passwd" | smtpd.conf intitle:"index of"
+inurl:"/.Trash" intitle:"index of" ~
+inurl:"/cgi-bin/CVS/"
+intitle:"index of" inurl:documents backup
+intitle:"index of" "/user" | "/users"
+intitle:"index of" $Recycle.bin
+allintitle:"Index of /Admin/Common" | allintext:"Parent Directory"
+allinurl:"wp-content/plugins/wordpress-popup/views/admin/"
+allintitle:"Index of /ThinkPHP" | inurl: "/ThinkPHP/"
+intitle:"index of /" ssh
+intitle:"Index of /" inurl:passport
+inurl:"/irj/go/km/" intext:navigation
+inurl:"/irj/go/km/docs/"
+inurl:"/webdynpro/resources/sap.com/"
+inurl:"ai1wm-backups"
+intitle:"Index of /private/"
+index of /etc/certs/
+intitle:'index of' "error_log"
+intitle:'index of' "access_log"
+intitle:"index of /" intext:/backup
+inurl:/wp-content/uploads/wp-backup-plus/
+intitle:"index of /" authorized_keys
+index of kcfinder/
+index of /ckeditor
+intitle:"index of /" intext:/descargas/
+intitle:"index of /" intext:/Download/
+intitle:index of /.sql.gz intext:/backup/
+inurl:/proc/tty/ index of
+intitle:" - Revision" + "subversion version"
+Index of /.svn
+intitle:"docker" intitle:"index of" config
+inurl:filebrowser.wcgp?subDir Communigate
+inurl:"/wp-json/" -wordpress
+intext:"paytm" intitle:"index of"
+intext:pure-ftpd.conf intitle:index of
+intext:my.cnf intitle:index of
+intext:"KRAB-DECRYPT.txt" intitle:"index of"
+inurl:/typo3/typo3conf
+intitle:backup+index of
+"index of" "database.sql.zip"
+"index of" "database_log"
+"Index of" "database.sql"
+intitle:index.of id_rsa -id_rsa.pub
+inurl:/wp-includes/certificates/
+intitle:"index of /bins" arm
+inurl:'listprojects.spr'
+allintext:'HttpFileServer 2.3k'
+inurl:"RootFolder=" Allitems "confidential" | "classified" | "passwords" | username
+inurl:"paypal" intitle:"index of" backup | db | access -github
+inurl:revslider inurl:'/revslider+port'
+inurl:"/wp-content/uploads/db-backup"
+"Powered by Apache Subversion version"
+index of /node_modules/ -github -stackoverflow
+intitle:index.of inurl:/websendmail/
+:DIR | intitle:index of inurl://whatsapp/
+intitle:"index.of" | inurl:/filemanager/connectors/ intext:uploadtest.html
+intitle:index.of home/000~root~000/
+intitle:"Index.Of.Applications (Parallels)" -stackoverflow -quora
+intitle:"Index Of" intext:".Trash"
+intitle:CV+index of
+inurl:"apps/backend/config/"
+intext:"Powered by ViewVC" | intitle:"ViewVC Repository Listing"
+inurl:/openwebmail/cgi-bin/openwebmail/etc/
+"lv_poweredBy"
+intext:"/wp-content/uploads/wpsc/"
+inurl:"nfs://www." "index of /"
+intitle:index.of .bashrc
+intext:"index of /userfiles/file/"
+intext:/wp-content/plugins/woocommerce/templates/emails/plain/
+inurl:/wp-content/plugins/seo-pressor/classes/
+inurl:/sym/root/ intitle:index.of
+intext:"Index of /database"
+intext:"Index of /.git"
+intitle:index.of intext:viewvc
+"m.zippyshare.com/"
+index of /htdocs
+intitle:"Index of /" "joomla_update.php"
+-inurl:htm -inurl:html intitle:"index of" NIKON
+-inurl:htm -inurl:html intitle:"index of" 100CANON
+inurl:"/drive/folders/" site:drive.google.com
+"Index of" inurl:"/$Recycle.Bin/"
+inurl:"folderview?id=" site:drive.google.com
+powered by h5ai
+site:onedrive.live.com shared by
+"Powered by AutoIndex PHP Script" ext:php
+inurl:admin inurl:uploads
+inurl:/fckeditor/editor/plugins/ajaxfilemanager/ajaxfilemanager.php
+Hostinger © 2016. All rights reserved inurl:default.php
+inurl:".esy.es/default.php"
+index:"html/js/editor/fckeditor/editor/filemanager/connectors"
+inurl:/FCKeditor/editor/filemanager/upload/
+inurl:pictures intitle:index.of
+inurl:trash intitle:index.of
+inurl:.ssh intitle:index.of authorized_keys
+inurl:/sites/default/files/webform/
+intitle:Index of /__MACOSX ...
+(intext:"index of /.git") ("parent directory")
+inurl:safm.asp ext:asp
+intitle: Index of /awstats/data
+inurl:/server/webapps
+intitle:index.of.mail
+inurl:pipermail intitle:index.of parent
+inurl:"wp-content/uploads/private"
+intitle:index.of inurl:grades site:edu
+intitle:index.of parent inurl:repos
+"My Documents" "parent" intitle:index.of
+"Desktop" parent intitle:index.of
+"sql" "parent" intitle:index.of -injection
+inurl:.DS_Store intitle:index.of
+inurl:.listing intitle:index.of
+inurl:/aspnet_client/system_web/
+inurl:users intitle:index.of
+private parent intitle:index.of
+mail spool intitle:index.of
+inurl:"default.php" intext:"website" "has been successfully installed on the server!"
+intitle:"Index.of" "attachments"
+intitle:"Index of" "WhatsApp Databases"
+inurl:"/cms/app/webroot"
+intitle:"Index of" "WhatsApp Images"
+intitle:"Index of" "DCIM"
+intext:index of sym
+intitle:index.of.pubs
+intitle:"Index of" "wwwroot"
+intitle:"Index Of" intext:"iCloud Photos" OR intext:"My Photo Stream" OR intext:"Camera Roll"
+intitle:"index of" inurl:"no-ip.com"
+inurl:private_files
+intitle:"index of" "onetoc2" "one"
+inurl:wp-admin/ intext:css/
+intitle:"Index of ftp"
+intitle:index.of.dropbox
+intitle:index.of +"Indexed by Apache::Gallery"
+intitle:index.of.accounts
+inurl:/wp-content/wpbackitup_backups
+"Config" intitle:"Index of" intext:vpn
+"jos_users" intitle:"Index of"
+inurl:/cgi-bin/.cgi
+allinurl:/hide_my_wp=
+intitle:"index of" intext:".ds_store"
+intitle:"index of" myshare
+intitle:index.of intext:.bash_history
+inurl:8080 intitle:"Dashboard [Jenkins]"
+intext:xampp-dav-unsecure:$apr1$6O9scpDQ$JGw2Tjz0jkrqfKh5hhiqD1
+"index of" inurl:root intitle:symlink
+"index of" inurl:sym
+inurl:ckfinder intext:"ckfinder.html" intitle:"Index of /ckfinder"
+inurl:/xampp
+allintext:"WebServerX Server at"
+intitle:index.of ios -site:cisco.com
+intitle:index.of cisco asa -site:cisco.com
+intitle:index.of.config
+allintitle:"FirstClass Login"
+inurl:install.pl intext:"Reading path paramaters" -edu
+"Warning: Installation directory exists at" "Powered by Zen Cart" -demo
+"Welcome to the directory listing of" "NetworkActiv-Web-Server"
+log inurl:linklint filetype:txt -"checking"
+"Directory Listing for" "Hosted by Xerver"
+intitle:"Folder Listing" "Folder Listing" Name Size Date/Time File Folder
+intitle:"Backup-Management (phpMyBackup v.0.4 beta * )" -johnny.ihackstuff
+intitle:"pictures thumbnails" site:pictures.sprintpcs.com
+intitle:index.of WEB-INF
+intitle:index.of /maildir/new/
+filetype:ini Desktop.iniintext:mydocs.dll
+filetype:torrent torrent
+"Index of" rar r01 nfo Modified 2004
+"Web File Browser" "Use regular expression"
+intitle:"HFS /" +"HttpFileServer"
+intitle:upload inurl:upload intext:upload -forum -shop -support -w3c
+intitle:"index of" inurl:ftp (pub | incoming)
+allinurl:"/*/_vti_pvt/" | allinurl:"/*/_vti_cnf/"
+intitle:index.of abyss.conf
+intitle:"Index of /CFIDE/" administrator
+"Powered by Invision Power File Manager" (inurl:login.php) | (intitle:"Browsing directory /" )
+intitle:"index of" "parent directory" "desktop.ini" site:dyndns.org
+intext:"Powered By: TotalIndex" intitle:"TotalIndex"
+"intitle:Index.Of /" stats merchant cgi-* etc
+intitle:"index of" intext:"content.ie5"
+inurl:explorer.cfm inurl:(dirpath|This_Directory)
+index.of.dcim
+intitle:"index of" -inurl:htm -inurl:html mp3
+intitle:"Directory Listing For" intext:Tomcat -int
+intitle:"webadmin - /*" filetype:php directory filename permission
+intitle:index.of (inurl:fileadmin | intitle:fileadmin)
+intitle:"Index of *" inurl:"my shared folder" size modified
+intitle:index.of /AlbumArt_
+intext:"d.aspx?id" || inurl:"d.aspx?id"
+"index of" / picasa.ini
+index.of.password
+intitle:"index of /phpmyadmin" modified
+filetype:cfg ks intext:rootpw -sample -test -howto
+intitle:"album permissions" "Users who can modify photos" "EVERYBODY"
+"Index Of /network" "last modified"
+intitle:intranet inurl:intranet +intext:"human resources"
+inurl:/tmp
+"index of" inurl:recycler
+inurl:j2ee/examples/jsp
+inurl:/pls/sample/admin_/help/
+inurl:ojspdemos
+"index of cgi-bin"
+intitle:"Index of" cfide
+intitle:"index.of.personal"
+inurl:backup intitle:index.of inurl:admin
+intitle:"Index of c:\Windows"
+"Welcome to phpMyAdmin" " Create new database"
+index.of.protected
+index.of.secure
+index.of.private
+index.of.password
+index.of.winnt
+index.of.secret
+"Index of /backup"
