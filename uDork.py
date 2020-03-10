@@ -76,6 +76,10 @@ def banner_error():
 	print("Error, faltan parámetros por pasar.")
 	print("Escriba python3 uDork.py -h para más información.")
 
+# Cabecera resultado
+def msgError():
+	print("Ha ocurrido un error al pasar los parámetros, revise los datos insertados.")
+
 # Mensaje para dorks massivos
 def msgMassive():
     print("%s[!]%s Los resultados irán apareciendo abajo. Esto tardará varios minutos, por favor espere..." % (red, end))
@@ -152,6 +156,12 @@ def optionExtension(extension, url, dork):
                 searchGlobal(url, dork, dato)
         finally:
             f.close()
+    else:
+        try:
+            search(url, dork, extension)
+        except:
+            msgError()
+
 
 # Ejecución del Script
 banner_uDork()
@@ -176,9 +186,10 @@ if args.domain != None:
     if args.extension == 'all':
         optionExtension(args.extension, url, dork='filetype')
     elif args.extension != None:
-        dork = 'filetype'
-        dato = args.extension
-        search(url, dork, dato)
+        optionExtension(args.extension, url, dork='filetype')
+    #    dork = 'filetype'
+    #    dato = args.extension
+    #    search(url, dork, dato)
     elif args.text != None:
         dork = 'intext'
         dato = args.text
