@@ -82,7 +82,7 @@ def msgMassive():
     print("")
 
 # Cabecera resultado
-def msgResult():
+def msgResult(url, dato):
     print("Dominio/IP: %s%s%s" % (bold, url, end))
     print("Tipo de ficheros: %s%s%s" % (bold, dato, end))
 
@@ -124,7 +124,7 @@ def searchGlobal(url, dork, dato):
                 if dato != lastDato:
                     if lastDato != dato:
                         separador()
-                    msgResult()
+                    msgResult(url, dato)
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
@@ -142,6 +142,17 @@ def searchMassive(url, dato):
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
+# Funciones dorks para menú
+def optionExtension(extension, url, dork):
+    msgMassive()
+    if extension == 'all':
+        f = open(d_filetype, 'r')
+        try:
+            for dato in f:
+                searchGlobal(url, dork, dato)
+        finally:
+            f.close()
+
 # Ejecución del Script
 banner_uDork()
 separador()
@@ -154,17 +165,16 @@ parser.add_argument("-t", "--text", help="Encuentra texto en el contenido del si
 parser.add_argument("-s", "--string", help="Localizar cadenas de texto dentro de la URL.")
 parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de dorks predefinida o personalizada. Revisar lista <-l/--list>")
 parser.add_argument("-l", "--list", help="Muestra el listado de dorks predefinido (Exploit-DB).")
+parser.add_argument("-f", "--file", help="Utiliza tu propia lista de dorks personalizada.")
+parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype | intext | inurl> (Requerido para '<-f/--file'>).")
 args = parser.parse_args()
+
 
 # Ejecución uDork
 if args.domain != None:
     url = args.domain
     if args.extension == 'all':
-        msgMassive()
-        f = open(d_filetype, 'r')
-        for dato in f:
-            dork = 'filetype'
-            searchGlobal(url, dork, dato)
+        optionExtension(args.extension, url, dork='filetype')
     elif args.extension != None:
         dork = 'filetype'
         dato = args.extension
@@ -189,6 +199,13 @@ if args.domain != None:
         f = open(lista, 'r')
         for dato in f:
             searchMassive(url, dato)
+    elif args.file != None and args.dork != None:
+        msgMassive()
+        f = open(args.file, 'r')
+        for dato in f:
+            searchGlobal(url, args.dork, dato)
+    else:
+        banner_error()
 elif args.list != None:
     listaDorks()
 else:
