@@ -88,7 +88,7 @@ def msgMassive():
 # Cabecera resultado
 def msgResult(url, dato):
     print("Dominio/IP: %s%s%s" % (bold, url, end))
-    print("Tipo de ficheros: %s%s%s" % (bold, dato, end))
+    print("Buscar enlaces con: %s%s%s" % (bold, dato, end))
 
 # Devuelve la lista por su flag
 def lista(dato):
@@ -110,13 +110,12 @@ def lista(dato):
 
 # Algoritmo dork 
 def search(url, dork, dato):
-	print("Dominio/IP: %s%s%s" % (bold, url, end))
-	print("Tipo de ficheros: %s%s%s" % (bold, dato, end))
-	separador()
-	for page in range(peticiones):
-		result = goop.search(url, dork, dato, cookie, page=page, full=True)
-		for each in result:
-			print('%s' % (result[each]['url']))
+    msgResult(url, dato)
+    separador()
+    for page in range(peticiones):
+        result = goop.search(url, dork, dato, cookie, page=page, full=True)
+        for each in result:
+            print('%s' % (result[each]['url']))
 
 # Algoritmo dork global
 def searchGlobal(url, dork, dato):
@@ -142,11 +141,12 @@ def searchMassive(url, dato):
                 if dato != lastDato:
                     if lastDato != dato:
                         separador()
-                    msgResult()
+                    msgResult(url, dato)
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
 # Funciones dorks para menú
+# Función filetype
 def optionExtension(extension, url, dork):
     msgMassive()
     if extension == 'all':
@@ -154,6 +154,8 @@ def optionExtension(extension, url, dork):
         try:
             for dato in f:
                 searchGlobal(url, dork, dato)
+        except:
+            msgError()
         finally:
             f.close()
     else:
@@ -162,6 +164,56 @@ def optionExtension(extension, url, dork):
         except:
             msgError()
 
+# Función intext
+def optionText(text, url, dork):
+    msgMassive
+    try:
+        search(url, dork, text)
+    except:
+        msgError()
+
+# Función string
+def optionString(string, url, dork):
+    msgMassive
+    try:
+        search(url, dork, string)
+    except:
+        msgError()
+
+# Función massive
+def optionMassive(massive, url, dork):
+    msgMassive
+    if massive == 'admin':
+        try:
+            f = open(lista(massive), 'r')
+            for dato in f:
+                searchGlobal(url, dork, dato)
+        except:
+            msgError()
+        finally:
+            f.close()
+    else:
+        try:
+            msgMassive()
+            f = open(lista(massive), 'r')
+            for dato in f:
+                searchMassive(url, dato)
+        except:
+            msgError()
+        finally:
+            f.close()
+
+# Función file
+# Hay que hacer la opción filetype por separado
+def optionFile(file, url, dork):
+    msgMassive()
+    f = open(file, 'r')
+    for dato in f:
+        searchGlobal(url, file, dato)
+            #msgMassive()
+        #f = open(args.file, 'r')
+        #for dato in f:
+        #    searchGlobal(url, args.dork, dato)
 
 # Ejecución del Script
 banner_uDork()
@@ -173,7 +225,7 @@ parser.add_argument("-d", "--domain", help="Dominio o dirección IP.")
 parser.add_argument("-e", "--extension", help="Buscar archivos por extensión. Usa 'all' para buscar extensión de la lista.")
 parser.add_argument("-t", "--text", help="Encuentra texto en el contenido del sitio web.")
 parser.add_argument("-s", "--string", help="Localizar cadenas de texto dentro de la URL.")
-parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de dorks predefinida o personalizada. Revisar lista <-l/--list>")
+parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de dorks predefinida. Revisar lista <-l/--list>")
 parser.add_argument("-l", "--list", help="Muestra el listado de dorks predefinido (Exploit-DB).")
 parser.add_argument("-f", "--file", help="Utiliza tu propia lista de dorks personalizada.")
 parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype | intext | inurl> (Requerido para '<-f/--file'>).")
@@ -187,34 +239,20 @@ if args.domain != None:
         optionExtension(args.extension, url, dork='filetype')
     elif args.extension != None:
         optionExtension(args.extension, url, dork='filetype')
-    #    dork = 'filetype'
-    #    dato = args.extension
-    #    search(url, dork, dato)
     elif args.text != None:
-        dork = 'intext'
-        dato = args.text
-        search(url, dork, dato)
+        optionText(args.text, url, dork='intext')
     elif args.string != None:
-        dork = 'inurl'
-        dato = args.string
+        optionString(args.string, url, dork='inurl')
     elif args.massive == 'admin':
-        msgMassive()
-        dork = 'inurl'
-        lista = lista(args.massive)
-        f = open(lista, 'r')
-        for dato in f:
-            searchGlobal(url, dork, dato)
+        optionMassive(args.massive, url, dork='inurl')
     elif args.massive != None:
-        msgMassive()
-        lista = lista(args.massive)
-        f = open(lista, 'r')
-        for dato in f:
-            searchMassive(url, dato)
+        optionMassive(args.massive, url, dork=None)
     elif args.file != None and args.dork != None:
-        msgMassive()
-        f = open(args.file, 'r')
-        for dato in f:
-            searchGlobal(url, args.dork, dato)
+        optionFile(args.file, url, args.dork)
+        #msgMassive()
+        #f = open(args.file, 'r')
+        #for dato in f:
+        #    searchGlobal(url, args.dork, dato)
     else:
         banner_error()
 elif args.list != None:
