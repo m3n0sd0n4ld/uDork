@@ -9,9 +9,6 @@ from goop import goop
 from colorama import Fore,Style
 from cookie import cookie
 
-# Variables
-#peticiones = 10
-
 # Colores
 red = '\033[91m'
 green = '\033[92m'
@@ -87,6 +84,10 @@ def msgMassive():
 
 # Cabecera resultado
 def msgResult(url, dato):
+    if args.output != None:
+        output("--------------------------------------------------------------------------------------------")
+        output("Dominio/IP: %s%s%s" % (bold, url, end))
+        output("Buscar enlaces con: %s%s%s" % (bold, dato, end))
     print("Dominio/IP: %s%s%s" % (bold, url, end))
     print("Buscar enlaces con: %s%s%s" % (bold, dato, end))
 
@@ -115,6 +116,8 @@ def search(url, dork, dato):
     for page in range(peticiones()):
         result = goop.search(url, dork, dato, cookie, page=page, full=True)
         for each in result:
+            if args.output != None:
+                output(result[each]['url'])
             print('%s' % (result[each]['url']))
 
 # Algoritmo dork global
@@ -128,6 +131,8 @@ def searchGlobal(url, dork, dato):
                     if lastDato != dato:
                         separador()
                     msgResult(url, dato)
+                    if args.output != None:
+                        output(result[each]['url'])
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
@@ -142,6 +147,8 @@ def searchMassive(url, dato):
                     if lastDato != dato:
                         separador()
                     msgResult(url, dato)
+                if args.output != None:
+                    output(result[each]['url'])
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
@@ -237,6 +244,17 @@ def peticiones():
         except:
             msgError()
 
+# Función output
+def output(linea):
+    try:
+        f = open(args.output, 'a')
+        f.write(linea)
+        f.write("\n")
+    except:
+        msgError()
+    finally:
+        f.close()
+
 # Ejecución del Script
 banner_uDork()
 separador()
@@ -254,7 +272,6 @@ parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype |
 parser.add_argument("-p", "--pages", help="Número de páginas a buscar en Google. (Por defecto 10 páginas).")
 parser.add_argument("-o", "--output", help="Exportar resultados a un fichero.")
 args = parser.parse_args()
-
 
 # Ejecución uDork
 if args.domain != None:
