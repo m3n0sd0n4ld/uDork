@@ -10,7 +10,7 @@ from colorama import Fore,Style
 from cookie import cookie
 
 # Variables
-peticiones = 1
+#peticiones = 10
 
 # Colores
 red = '\033[91m'
@@ -52,7 +52,7 @@ def banner_uDork():
 
 # Separador entre líneas
 def separador():
-	print("----------------------------------------------------------------------")
+	print("--------------------------------------------------------------------------------------------")
 
 # Listado de dorks predefinidos
 def listaDorks():
@@ -83,7 +83,7 @@ def msgError():
 # Mensaje para dorks massivos
 def msgMassive():
     print("%s[!]%s Los resultados irán apareciendo abajo. Esto tardará varios minutos, por favor espere..." % (red, end))
-    print("")
+    separador()
 
 # Cabecera resultado
 def msgResult(url, dato):
@@ -112,7 +112,7 @@ def lista(dato):
 def search(url, dork, dato):
     msgResult(url, dato)
     separador()
-    for page in range(peticiones):
+    for page in range(peticiones()):
         result = goop.search(url, dork, dato, cookie, page=page, full=True)
         for each in result:
             print('%s' % (result[each]['url']))
@@ -120,7 +120,7 @@ def search(url, dork, dato):
 # Algoritmo dork global
 def searchGlobal(url, dork, dato):
     lastDato = None
-    for page in range(peticiones):
+    for page in range(peticiones()):
         result = goop.search_all_dork(url, dork, dato, cookie, page=page, full=True)
         for each in result:
             if each != None:
@@ -134,7 +134,7 @@ def searchGlobal(url, dork, dato):
 # Algoritmo dork masivos
 def searchMassive(url, dato):
     lastDato = None
-    for page in range(peticiones):
+    for page in range(peticiones()):
         result = goop.search_all_global(url, dato, cookie, page=page, full=True)
         for each in result:
             if each != None:
@@ -166,7 +166,7 @@ def optionExtension(extension, url, dork):
 
 # Función intext
 def optionText(text, url, dork):
-    msgMassive
+    msgMassive()
     try:
         search(url, dork, text)
     except:
@@ -174,7 +174,7 @@ def optionText(text, url, dork):
 
 # Función string
 def optionString(string, url, dork):
-    msgMassive
+    msgMassive()
     try:
         search(url, dork, string)
     except:
@@ -182,7 +182,7 @@ def optionString(string, url, dork):
 
 # Función massive
 def optionMassive(massive, url, dork):
-    msgMassive
+    msgMassive()
     if massive == 'admin':
         try:
             f = open(lista(massive), 'r')
@@ -194,7 +194,6 @@ def optionMassive(massive, url, dork):
             f.close()
     else:
         try:
-            msgMassive()
             f = open(lista(massive), 'r')
             for dato in f:
                 searchMassive(url, dato)
@@ -204,16 +203,39 @@ def optionMassive(massive, url, dork):
             f.close()
 
 # Función file
-# Hay que hacer la opción filetype por separado
 def optionFile(file, url, dork):
     msgMassive()
-    f = open(file, 'r')
-    for dato in f:
-        searchGlobal(url, file, dato)
-            #msgMassive()
-        #f = open(args.file, 'r')
-        #for dato in f:
-        #    searchGlobal(url, args.dork, dato)
+    if dork == 'filetype':
+        try:
+            f = open(file, 'r')
+            for dato in f:
+                searchGlobal(url, dork, dato)
+        except:
+            msgError()
+        finally:
+            f.close()
+    else:
+        try:
+            f = open(file, 'r')
+            for dato in f:
+                searchGlobal(url, file, dato)
+        except:
+            msgError()
+        finally:
+            f.close()
+
+# Páginas/Peticiones
+def peticiones():
+    if args.pages != None:
+        try:
+            return int(args.pages)
+        except:
+            msgError()
+    else:
+        try:
+            return 10
+        except:
+            msgError()
 
 # Ejecución del Script
 banner_uDork()
@@ -229,6 +251,8 @@ parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de d
 parser.add_argument("-l", "--list", help="Muestra el listado de dorks predefinido (Exploit-DB).")
 parser.add_argument("-f", "--file", help="Utiliza tu propia lista de dorks personalizada.")
 parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype | intext | inurl> (Requerido para '<-f/--file'>).")
+parser.add_argument("-p", "--pages", help="Número de páginas a buscar en Google. (Por defecto 10 páginas).")
+parser.add_argument("-o", "--output", help="Exportar resultados a un fichero.")
 args = parser.parse_args()
 
 
@@ -249,10 +273,6 @@ if args.domain != None:
         optionMassive(args.massive, url, dork=None)
     elif args.file != None and args.dork != None:
         optionFile(args.file, url, args.dork)
-        #msgMassive()
-        #f = open(args.file, 'r')
-        #for dato in f:
-        #    searchGlobal(url, args.dork, dato)
     else:
         banner_error()
 elif args.list != None:
