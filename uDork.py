@@ -6,7 +6,6 @@ import json
 import time
 import argparse
 from goop import goop
-from colorama import Fore,Style
 from cookie import cookie
 
 # Colores
@@ -43,7 +42,7 @@ def banner_uDork():
  _   _| |  | | ___  _ __| | __
 | | | | |  | |/ _ \| '__| |/ /
 | |_| | |__| | (_) | |  |   < 
- \__,_|_____/ \___/|_|  |_|\_\ %sv.2019.12.1
+ \__,_|_____/ \___/|_|  |_|\_\ %sv.2020.03.13
 		by %sM3n0sD0n4ld%s
 """ % (bold, red, end))
 
@@ -79,7 +78,7 @@ def msgError():
 
 # Mensaje para dorks massivos
 def msgMassive():
-    print("%s[!]%s Los resultados irán apareciendo abajo. Esto tardará varios minutos, por favor espere..." % (red, end))
+    print("%s[!]%s Los resultados irán apareciendo abajo. Esto puede tardar varios minutos, por favor espere..." % (red, end))
     separador()
 
 # Cabecera resultado
@@ -128,11 +127,11 @@ def searchGlobal(url, dork, dato):
         for each in result:
             if each != None:
                 if dato != lastDato:
-                    if lastDato != dato:
+                    if lastDato != None:
                         separador()
                     msgResult(url, dato)
-                    if args.output != None:
-                        output(result[each]['url'])
+                if args.output != None:
+                    output(result[each]['url'])
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
@@ -144,7 +143,7 @@ def searchMassive(url, dato):
         for each in result:
             if each != None:
                 if dato != lastDato:
-                    if lastDato != dato:
+                    if lastDato != None:
                         separador()
                     msgResult(url, dato)
                 if args.output != None:
@@ -240,7 +239,7 @@ def peticiones():
             msgError()
     else:
         try:
-            return 10
+            return 5
         except:
             msgError()
 
@@ -269,7 +268,7 @@ parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de d
 parser.add_argument("-l", "--list", help="Muestra el listado de dorks predefinido (Exploit-DB).")
 parser.add_argument("-f", "--file", help="Utiliza tu propia lista de dorks personalizada.")
 parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype | intext | inurl> (Requerido para '<-f/--file'>).")
-parser.add_argument("-p", "--pages", help="Número de páginas a buscar en Google. (Por defecto 10 páginas).")
+parser.add_argument("-p", "--pages", help="Número de páginas a buscar en Google. (Por defecto 5 páginas).")
 parser.add_argument("-o", "--output", help="Exportar resultados a un fichero.")
 args = parser.parse_args()
 
