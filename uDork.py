@@ -48,7 +48,7 @@ def banner_uDork():
 
 # Separador entre líneas
 def separador():
-	print("--------------------------------------------------------------------------------------------")
+	print("----------------------------------------------------------------------------------------------------")
 
 # Listado de dorks predefinidos
 def listaDorks():
@@ -79,14 +79,14 @@ def msgError():
 # Mensaje para dorks massivos
 def msgMassive():
     print("%s[!]%s Los resultados irán apareciendo abajo. Esto puede tardar varios minutos, por favor espere..." % (red, end))
-    separador()
 
 # Cabecera resultado
 def msgResult(url, dato):
     if args.output != None:
-        output("--------------------------------------------------------------------------------------------")
+        output("----------------------------------------------------------------------------------------------------")
         output("Dominio/IP: %s%s%s" % (bold, url, end))
         output("Buscar enlaces con: %s%s%s" % (bold, dato, end))
+    separador()
     print("Dominio/IP: %s%s%s" % (bold, url, end))
     print("Buscar enlaces con: %s%s%s" % (bold, dato, end))
 
@@ -127,8 +127,6 @@ def searchGlobal(url, dork, dato):
         for each in result:
             if each != None:
                 if dato != lastDato:
-                    if lastDato != None:
-                        separador()
                     msgResult(url, dato)
                 if args.output != None:
                     output(result[each]['url'])
@@ -143,8 +141,6 @@ def searchMassive(url, dato):
         for each in result:
             if each != None:
                 if dato != lastDato:
-                    if lastDato != None:
-                        separador()
                     msgResult(url, dato)
                 if args.output != None:
                     output(result[each]['url'])
