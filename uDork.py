@@ -8,7 +8,7 @@ import argparse
 from goop import goop
 from cookie import cookie
 
-# Colores
+# Colors
 red = '\033[91m'
 green = '\033[92m'
 white = '\033[97m'
@@ -33,8 +33,8 @@ d_redes_vulnerables = './dorks/redes_vulnerables.txt'
 d_portal_logins = './dorks/portal_logins.txt'
 d_dispositivos = './dorks/dispositivos.txt'
 
-# Funciones
-# Logotipo de inicio
+# Functions
+# Logotype 
 def banner_uDork():
 	print("""                                                                
        _____             _    
@@ -43,72 +43,72 @@ def banner_uDork():
 | | | | |  | |/ _ \| '__| |/ /
 | |_| | |__| | (_) | |  |   < 
  \__,_|_____/ \___/|_|  |_|\_\ %sv.2020.03.13
-		by %sM3n0sD0n4ld%s
-""" % (bold, red, end))
+		by %sM3n0sD0n4ld%s - (%s@David_Uton%s)%s
+""" % (bold, red, white, yellow, white, end))
 
-# Separador entre líneas
+# Separator
 def separador():
 	print("----------------------------------------------------------------------------------------------------")
 
-# Listado de dorks predefinidos
+# Dorks listing
 def listaDorks():
     print("""
- ======================== LISTADO DORKS ========================
- admin : Paneles de acceso de todo tipo (administración, login, CMS, ...)
- directorios : Directorios sensibles (drupal, wordpress, phpmyadmin...)
- usernames : Encuentra archivos que contienen nombres de usuarios.
- passwords : Encuentra archivos que contienen contraseñas.
- webservers: Encuentra servidores web.
- archivos_vulnerables : Encuentra archivos vulnerables. 
- servidores_vulnerables : Encuentra servidores vulnerables.
- mensajes_error : Muestra mensajes de error.
- redes_vulnerables : Encuentra datos de software en redes vulnerables.
- portal_logins : Enumera logins de portales.
- dispositivos :  Encuentra dispositivos conectados (impresoras, webcams, termostatos, ...)
+ ======================== DORKS LISTING ========================
+ admin : Access panels of all kinds (administration, login, CMS, ...)
+ directories : Sensitive directories (drupal, wordpress, phpmyadmin ...)
+ usernames : Find files containing user names.
+ passwords : Find files that contain passwords.
+ webservers: Find web servers.
+ vulnerable_files : Find vulnerable files. 
+ vulnerable_servers : Find vulnerable servers.
+ error_messages : Show error messages.
+ vulnerable_networks : Find software data on vulnerable networks.
+ portal_logins : List portal logins.
+ devices :  Find connected devices (printers, webcams, thermostats, ...)
 """)
 
-# Mensaje de error del menú
+# Error menu message
 def banner_error():
-	print("Error, faltan parámetros por pasar.")
-	print("Escriba python3 uDork.py -h para más información.")
+	print("Error, missing parameters to pass.")
+	print("Type python3 uDork.py -h for more information.")
 
-# Cabecera resultado
+# Error message
 def msgError():
-	print("Ha ocurrido un error al pasar los parámetros, revise los datos insertados.")
+	print("An error occurred while passing the parameters, check the inserted data.")
 
-# Mensaje para dorks massivos
+# Massive message
 def msgMassive():
-    print("%s[!]%s Los resultados irán apareciendo abajo. Esto puede tardar varios minutos, por favor espere..." % (red, end))
+    print("%s[!]%s The results will appear below. This may take several minutes, please wait ..." % (red, end))
 
-# Cabecera resultado
+# Result message
 def msgResult(url, dato):
     if args.output != None:
         output("----------------------------------------------------------------------------------------------------")
-        output("Dominio/IP: %s%s%s" % (bold, url, end))
-        output("Buscar enlaces con: %s%s%s" % (bold, dato, end))
+        output("Domain/IP: %s%s%s" % (bold, url, end))
+        output("Find links with: %s%s%s" % (bold, dato, end))
     separador()
-    print("Dominio/IP: %s%s%s" % (bold, url, end))
-    print("Buscar enlaces con: %s%s%s" % (bold, dato, end))
+    print("Domain/IP: %s%s%s" % (bold, url, end))
+    print("Find links with: %s%s%s" % (bold, dato, end))
 
-# Devuelve la lista por su flag
+# Dorks listing
 def lista(dato):
 	lista = {
             "all": d_filetype,
             "admin": d_admin,
-		    "directorios": d_directorios,
+		    "directories": d_directorios,
 		    "usernames": d_usernames,
 		    "passwords": d_passwords,
 		    "webservers": d_webservers,
-		    "archivos_vulnerables": d_archivos_vulnerables,
-		    "servidores_vulnerables": d_servidores_vulnerables,
-		    "mensajes_error": d_mensajes_error,
-		    "redes_vulnerables": d_redes_vulnerables,
+		    "vulnerable_files": d_archivos_vulnerables,
+		    "vulnerable_servers": d_servidores_vulnerables,
+		    "error_messages": d_mensajes_error,
+		    "vulnerable_networks": d_redes_vulnerables,
 		    "portal_logins": d_portal_logins,
-		    "dispositivos": d_dispositivos
+		    "devices": d_dispositivos
 	}
-	return lista.get(dato, "Error, no encuentra listado.")
+	return lista.get(dato, "Error, can't find listing.")
 
-# Algoritmo dork 
+# Dork default
 def search(url, dork, dato):
     msgResult(url, dato)
     separador()
@@ -119,7 +119,7 @@ def search(url, dork, dato):
                 output(result[each]['url'])
             print('%s' % (result[each]['url']))
 
-# Algoritmo dork global
+# Dork global
 def searchGlobal(url, dork, dato):
     lastDato = None
     for page in range(peticiones()):
@@ -133,7 +133,7 @@ def searchGlobal(url, dork, dato):
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
-# Algoritmo dork masivos
+# Dork massive
 def searchMassive(url, dato):
     lastDato = None
     for page in range(peticiones()):
@@ -147,8 +147,8 @@ def searchMassive(url, dato):
                 print('%s' % (result[each]['url']))
                 lastDato = dato
 
-# Funciones dorks para menú
-# Función filetype
+# Dorks menu functions
+# Filetype
 def optionExtension(extension, url, dork):
     msgMassive()
     if extension == 'all':
@@ -166,7 +166,7 @@ def optionExtension(extension, url, dork):
         except:
             msgError()
 
-# Función intext
+# Intext
 def optionText(text, url, dork):
     msgMassive()
     try:
@@ -174,7 +174,7 @@ def optionText(text, url, dork):
     except:
         msgError()
 
-# Función string
+# String
 def optionString(string, url, dork):
     msgMassive()
     try:
@@ -182,7 +182,7 @@ def optionString(string, url, dork):
     except:
         msgError()
 
-# Función massive
+# Massive
 def optionMassive(massive, url, dork):
     msgMassive()
     if massive == 'admin':
@@ -204,7 +204,7 @@ def optionMassive(massive, url, dork):
         finally:
             f.close()
 
-# Función file
+# File
 def optionFile(file, url, dork):
     msgMassive()
     if dork == 'filetype':
@@ -226,7 +226,7 @@ def optionFile(file, url, dork):
         finally:
             f.close()
 
-# Páginas/Peticiones
+# Pages
 def peticiones():
     if args.pages != None:
         try:
@@ -239,7 +239,7 @@ def peticiones():
         except:
             msgError()
 
-# Función output
+# Output
 def output(linea):
     try:
         f = open(args.output, 'a')
@@ -250,25 +250,23 @@ def output(linea):
     finally:
         f.close()
 
-# Ejecución del Script
+# Menu
 banner_uDork()
 separador()
-
-# Menu
 parser = argparse.ArgumentParser()
-parser.add_argument("-d", "--domain", help="Dominio o dirección IP.")
-parser.add_argument("-e", "--extension", help="Buscar archivos por extensión. Usa 'all' para buscar extensión de la lista.")
-parser.add_argument("-t", "--text", help="Encuentra texto en el contenido del sitio web.")
-parser.add_argument("-s", "--string", help="Localizar cadenas de texto dentro de la URL.")
-parser.add_argument("-m", "--massive", help="Ataca a un sitio con una lista de dorks predefinida. Revisar lista <-l/--list>")
-parser.add_argument("-l", "--list", help="Muestra el listado de dorks predefinido (Exploit-DB).")
-parser.add_argument("-f", "--file", help="Utiliza tu propia lista de dorks personalizada.")
-parser.add_argument("-k", "--dork", help="Especifica el tipo de dork <filetype | intext | inurl> (Requerido para '<-f/--file'>).")
-parser.add_argument("-p", "--pages", help="Número de páginas a buscar en Google. (Por defecto 5 páginas).")
-parser.add_argument("-o", "--output", help="Exportar resultados a un fichero.")
+parser.add_argument("-d", "--domain", help="Domain or IP address.")
+parser.add_argument("-e", "--extension", help="Search files by extension. Use 'all' to find the list extension.")
+parser.add_argument("-t", "--text", help="Find text in website content.")
+parser.add_argument("-s", "--string", help="Locate text strings within the URL.")
+parser.add_argument("-m", "--massive", help="Attack a site with a predefined list of dorks. Review list <-l / - list>")
+parser.add_argument("-l", "--list", help="Shows the list of predefined dorks (Exploit-DB).")
+parser.add_argument("-f", "--file", help="Use your own personalized list of dorks.")
+parser.add_argument("-k", "--dork", help="Specifies the type of dork <filetype | intext | inurl> (Required for '<-f / - file'>).")
+parser.add_argument("-p", "--pages", help="Number of pages to search in Google. (By default 5 pages).")
+parser.add_argument("-o", "--output", help="Export results to a file.")
 args = parser.parse_args()
 
-# Ejecución uDork
+# uDork execution
 if args.domain != None:
     url = args.domain
     if args.extension == 'all':
