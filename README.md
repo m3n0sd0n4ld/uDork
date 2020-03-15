@@ -1,7 +1,7 @@
 # uDork - Google Hacking Tool
 
 ###### Author: M3n0sD0n4ld
-###### Twitter: @David_Uton
+###### Twitter: @David_Uton [https://twitter.com/David_Uton]
 
 # Description:
 
