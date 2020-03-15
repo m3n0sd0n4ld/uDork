@@ -12,8 +12,8 @@ uDork does NOT make attacks against any server, it only uses predefined dorks an
 
 # Download and install:
 ```
-git clone https://github.com/m3n0sd0n4ld/uDork
-cd /uDork
+$ git clone https://github.com/m3n0sd0n4ld/uDork
+$ cd /uDork
 $ python3 uDork.py -h
 ```
 # Use:
