@@ -9,15 +9,36 @@ uDork is a script written in Python that uses advanced Google search techniques 
 
 uDork does NOT make attacks against any server, it only uses predefined dorks and/or official lists from exploit-db.com (Google Hacking Database: https://www.exploit-db.com/google-hacking-database).
 
+# You need to have goop installed
+```
+pip3 install goop
+```
 
-# Download and install:
+# Download and install: (Do not use at the moment, USE OPTION 2 please, sorry)
 ```
 $ git clone https://github.com/m3n0sd0n4ld/uDork
 $ cd uDork
 $ python3 uDork.py -h
 ```
+# Opcion 2
+- Download and unzip this [file](https://github.com/m3n0sd0n4ld/uDork/blob/master/uDork.zip)
+- Create a file with the name "cookie.py".
+- Open the file and write inside this line:
+```
+cookie = "YOUR FACEBOOK COOKIE HERE"
+```
+- Save file and run uDork.py.
+
 # Important!!!
-For the tool to work, you must configure uDork with your Facebook cookie in the file `cookie.py`.
+- For the tool to work, you must configure uDork with your Facebook cookie in the file `cookie.py`.
+- You must also be logged in to Facebook on the computer you are using uDork WITHOUT logging out.
+
+## Steps to obtain the cookie and configure the cookie
+- Login to facebook.com
+- Press in your browser control + shift + K (Firefox) o control + shift + J (Google Chrome) to go to console.
+- Console document.cookie and copy its contents to the variable "cookie" inside the file "cookie.py"
+- Save and remember, you must NOT log out of Facebook or you will have to do these steps again.
+
 
 # Use:
 
