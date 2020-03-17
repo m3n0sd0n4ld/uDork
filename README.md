@@ -24,7 +24,7 @@ cookie = "YOUR FACEBOOK COOKIES HERE"
 ```
 $ python3 uDork.py -h
 ```
-# Opcion 2
+# Option 2
 - Download and unzip this [file](https://github.com/m3n0sd0n4ld/uDork/blob/master/uDork.zip)
 - Create a file with the name "cookie.py".
 - Open the file and write inside this line:
