@@ -24,15 +24,6 @@ cookie = "YOUR FACEBOOK COOKIES HERE"
 ```
 $ python3 uDork.py -h
 ```
-# Option 2
-- Download and unzip this [file](https://github.com/m3n0sd0n4ld/uDork/blob/master/uDork.zip)
-- Create a file with the name "cookie.py".
-- Open the file and write inside this line:
-```
-cookie = "YOUR FACEBOOK COOKIES HERE"
-```
-- Save file and run uDork.py.
-
 # Important!!!
 - For the tool to work, you must configure uDork with your Facebook cookie in the file `cookie.py`.
 - You must also be logged in to Facebook on the computer you are using uDork WITHOUT logging out.
