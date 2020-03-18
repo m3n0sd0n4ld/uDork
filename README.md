@@ -20,7 +20,7 @@ $ git clone https://github.com/m3n0sd0n4ld/uDork
 $ cd uDork
 - Open the file and write inside this line:
 ```
-cookie = "YOUR FACEBOOK COOKIES HERE"
+cookie = 'YOUR FACEBOOK COOKIES HERE'
 ```
 $ python3 uDork.py -h
 ```
