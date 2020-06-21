@@ -9,15 +9,11 @@ uDork is a script written in Python that uses advanced Google search techniques 
 
 uDork does NOT make attacks against any server, it only uses predefined dorks and/or official lists from exploit-db.com (Google Hacking Database: https://www.exploit-db.com/google-hacking-database).
 
-# You need to have goop installed
-```
-pip3 install goop
-```
-
 # Download and install:
 ```
 $ git clone https://github.com/m3n0sd0n4ld/uDork
 $ cd uDork
+$ pip install -r requirements.txt
 - Open the file and write inside this line:
 ```
 cookie = 'YOUR FACEBOOK COOKIES HERE'
