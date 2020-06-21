@@ -3,5 +3,5 @@ WORKDIR /app
 ADD . /app
 RUN pip install -r requirements.txt
 ENV FACEBOOK_COOKIE 'changeme'
-ENTRYPOINT ['python3', './uDork.py']
-CMD ['-h']
+ENTRYPOINT ["/usr/local/bin/python3", "./uDork.py"]
+CMD ["-h"]
