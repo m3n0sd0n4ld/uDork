@@ -3,6 +3,10 @@
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
 
+# WARNING!!! Goop has stopped working, so uDork too... But don't worry, soon I will publish a new functional version WITHOUT Goop. ;)
+
+# Sorry for the inconvenience, take care!
+
 # Description:
 
 uDork is a script written in Python that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
