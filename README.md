@@ -7,6 +7,11 @@
 
 # Sorry for the inconvenience, take care!
 
+
+# Demo new version v.2020.06b
+I leave you a video of the new version that will soon be available:
+[![Watch the video](https://img.youtube.com/vi/_vOJqtDbhe0/maxresdefault.jpg)](https://youtu.be/_vOJqtDbhe0)
+
 # Description:
 
 uDork is a script written in Python that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
