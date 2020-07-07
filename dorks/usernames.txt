@@ -1,0 +1,21 @@
+"username.xlsx" ext:xlsx
+inurl:/_layouts/mobile/view.aspx?List=
+"authentication failure; logname=" ext:log
+inurl:/profile.php?lookup=1
+intext:"root:x:0:0:root:/root:/bin/bash" inurl:*=/etc/passwd
+inurl:"/root/etc/passwd" intext:"home/*:"
+site:extremetracking.com inurl:"login="
+intext:"SteamUserPassphrase=" intext:"SteamAppUser=" -"username" -"user"
+inurl:root.asp?acs=anon
+filetype:conf inurl:proftpd.conf -sample
+filetype:log username putty
+filetype:reg reg +intext:"internet account manager"
+filetype:reg reg HKEY_CURRENT_USER username
++intext:"webalizer" +intext:"Total Usernames" +intext:"Usage Statistics for"
+inurl:php inurl:hlstats intext:"Server Username"
+"index of" / lck
+index.of perform.ini
+inurl:admin filetype:asp inurl:userlist
+inurl:admin inurl:userlist
+intitle:index.of .bash_history
+intitle:index.of .sh_history

@@ -1,0 +1,240 @@
+site:gov.*.*/ intext:"login" intitle:"login"
+intitle:"index of" "nginx.log"
+intitle:"index of" "/ftpusers"
+intitle:"index of" ./bash_history
+site:vpn.*.*/ intext:"login" intitle:"login"
+intitle:"index of" "/master.passwd"
+intitle:"index of" "bundle.pem"
+intitle:"index of" "app.log"
+intitle:"IceWarp WebClient"
+intitle:"index of" "/home/ROOT_PATH/"
+intitle:"index of" /etc/openvpn/
+intitle:"index of" "*named.root.key"
+intitle:"index of" "ssh_host_ecdsa_key"
+intitle:qdPM 9.1. Copyright (c) 2020 qdpm.net
+intitle:"index of" and intext:"vendor" and intext:"phpunit"
+intitle:"index of" "id_rsa.pub"
+intitle:"index of" "admin/xml"
+intitle:"index of" "oauth-private.key"
+intitle:"index of" "users.sql"
+intitle:"index of" secrets.yml
+intitle:"index of /" "*key.pem"
+intitle:"index of" "admin/sql/"
+intitle:"index of" admin.tar
+"login" intitle:"intext:"Welcome to Member" login"
+intitle:"index of" "survey.cgi"
+intitle:index.of.?.db
+intitle:"index of" "dev/config"
+intitle:"index of" "nrpe.cfg"
+intitle:"index of /" "nginx.conf"
+intitle:"*Admin Intranet Login"
+intitle:"index of" pass.php
+intitle:"index of" "wp-admin.zip"
+intitle:"index of" "filemail.pl"
+intitle:"Intranet Login"
+intitle:"index of" "shell.php"
+intitle:"Dashboard [Jenkins]"
+inurl:admin intitle:index of ext:sql | xls | xml | json | csv
+intitle:.*edu/login
+intitle:"index of" "uploads.old"
+intitle:"index of" "var/log/"
+intitle:index of config.asp
+intitle:"index of" "security.php"
+intitle:"index of" "AT-admin.cgi"
+intitle:"index of" inurl:ftp intext:admin
+intitle:"index of" ".config"
+intitle:"index of" "adminsubscribeack.txt"
+"config.php.bak" intitle:"index of"
+intitle:"index of" "log.bak"
+allintitle: sensitive ext:doc OR ext:xls OR ext:xlsx
+intitle:"index of" "database/config"
+intitle:"index of" "auth_config.php"
+intitle:"index of" "aws-config.php"
+intitle:"index of" "auth.config"
+site:*/auth.html intitle:login
+intitle:"index of" "admin-login.php"
+intitle:adminlogin inurl:login
+intitle:"index of" "admin/config"
+intitle:"index of" "system/config"
+"login" intitle:"*board login"
+"login" intitle:"*scada login"
+"login" intitle:"*dashboard login"
+intitle:"index of" "properties.ini"
+intitle:"HP System Management Homepage" inurl:cpqlogin
+intitle:"HP ALM" "Application Lifecycle Management" inurl:/qcbin/ -ext:PDF
+intitle:"ASUS" AND inurl:"Main_Login.asp" AND intext:"router account" -asus.com
+intitle:"Index of" intitle:"UserPro" -uploads
+intitle:"Ice Hrm Login" intext:"Forgot Password"
+intitle:"ShowIt-Admin"
+intitle:"index of" "api/admin"
+intitle:"index of" "stacktrace.log"
+intitle:"index of" "db.log"
+intitle:"Skipfish - scan results browser"
+intitle:"WEBCAM 7 " -inurl:/admin.html
+intitle:"index of" "tinyfilemanager.php"
+intitle:"index of" "userdata.json"
+intitle:"index of " "users.json"
+intitle:"index of" "wpadmin-secure.htaccess"
+intitle:"Nikto Report" "OSVDB"
+intitle:"index of" "privkey.pem"
+intitle:"index of" "dhparams.pem"
+intitle:"index of" "token.txt"
+intitle:"index of" "refresh_token.txt" OR "access_token.txt" OR "jsapi_ticket.txt"
+intitle:"index of" "*root.pem"
+intitle:"index of" "cassandra-yaml"
+intitle:"index of" "configure.in"
+intitle:"index of" "user data.txt"
+intitle:"index of" "jsapi_ticket.json"
+intitle:"index of" "mvn-settings.xml"
+intitle:"index of" "admin.jsp"
+intitle:"index of" "postgresql.conf"
+intitle:"Index of" "backup-audio-queue.log" OR "backup-audio.log" OR "backup-mysql.log"
+intitle:"index of" "config.neon" OR "config.local.neon"
+intitle:"index of" "my-errors.log" OR "my-errors.logs"
+intitle:"index of" "token_info.json" OR "get_access_token.json"
+intitle:"index of" "fullchain.pem" OR "chain.pem"
+intitle:"index of" "users.txt"
+intitle:"Index of" "ca-key.pem" OR "ca-req.pem"
+intitle:"index of" "local.json"
+intitle:"index of" "oauth-credentials.json"
+intitle:"index of" "symfony/config"
+intitle:"index of" "backup.js"
+intitle:"index of" "debian-security.log"
+intitle:"index of" "auth.asc"
+intitle:"index of" "security.json"
+intitle:"index of" "google-api-private-key.json"
+intitle:"index of" "secrets.py"
+intitle:"index of" "cfg.go"
+intitle:"index of" "config.rb"
+intitle:"index of" "login.docx"
+intitle:"index of" "config.pl"
+intitle:"index of" "manage.py"
+intitle:"index of" "config.js"
+intitle:"Index of" test.logs
+intitle:"index of" "queue.log"
+intitle:"index of" "web.log" OR "web.logs"
+intitle:"index of" "test/storage/framework/sessions/"
+intitle:"index of" "Logins.txt"
+intitle:"index of" "keys.asc"
+intitle:"index of" "/admin/backup"
+intitle:"index of" "login.txt"
+intitle:"index of" "passwords.xlsx"
+intitle:"index of" "graphql/subscription"
+intitle:"index of" "auth.log"
+intitle:"index of" users.bak
+intitle:"index of" "secret.js"
+intitle:qdPM 9.1. Copyright (c) 2020 qdpm.net
+intitle:"elFinder 2.1.x"
+intitle:"index of" "accounts.json"
+intitle:"index of" "docker.yml"
+intitle:"index of" "admin.bak"
+intitle:"index of" "admin/json"
+intitle:"index of" "settings.yaml"
+intitle:"index of" "api.yaml"
+intitle:"index of" "client_id.json"
+intitle:"WeatherLinkIP Configuration"
+intitle:"index of" "/config.bak"
+intitle:"index of" "/yum.log"
+intitle:"index of" "/users.xls"
+intitle:"OpenMeetings" intext:"Username or mail address"
+intitle:"index of" "users.ini"
+intitle:"index of" "/accounts.txt"
+intitle:"index of" "git-jira-log"
+intitle:"index of" "/admin_backup"
+intitle:"index of" dataSources.local.xml
+intitle:"index of" apis.json
+intitle:"index of" admin.txt
+intitle:"index of" "parameters.yml.test" OR "parameters.yml.dist"
+intitle:"index of" "docker-cloud.yml"
+intitle:"index of" "application.yml"
+intitle:"index of" "database.json"
+intitle:"index of" db.json
+intitle:"index of" license-key.txt
+intitle:"index of" settings.xml
+intitle:"Fortinet - Login"
+intitle:"index of" "keys.ini"
+intitle:"index of" "credentials.json"
+intitle:"index of" "client_secret.json" OR "client secret" OR "client_secret live.json"
+intitle:"index of" "token.json"
+intitle:"index of" /insecure_private_key
+intitle:"index of" "credentials.ini"
+intitle:"index of" "dovecot.key" OR "dovecot.crt.cache" OR "dovecot.crt"
+intitle:"index of" db.frm
+intitle:"index of" apache.log
+intitle:"index of" machine.config
+intitle:"index of" errors.log
+intitle:"index of" /known_hosts
+intitle:"index of" /.ssh/id_rsa OR id_rsa.pub
+intitle:"index of" "syslog"
+intitle:"index of" "/cron.log"
+intitle:"index of" "/db_backups/"
+intitle:"index of" keepass.kdbx OR database.kdbx
+intitle:"Kyocera Command Center" inurl:index.htm
+intitle:"Internet Services" inurl:default.htm intext:"FUJI XEROX"
+intitle:"Index of" db_mysql.inc
+intitle:"Index of" db.inc
+"The default username and password is admin:admin" intitle:Login OR inurl:login.php
+intitle:"index of " "*.passwords.txt"
+inurl:8080/dashboard intitle:Graphite Dashboard
+intitle:"index of" "debug.log" OR "debug-log"
+intitle:"index of" "db.ini"
+intitle:"index of" application.ini
+intitle:"index of" "database.ini" OR "database.ini.old"
+intitle:"My Book World Edition - MyBookWorld"
+"login" intitle:"iot login"
+intitle:"index of" errorlog.txt
+inurl:"login.html" intitle:"d-link"
+inurl:/?MAIN=DEVICE intitle:TopAccess intext:Device
+intitle:"index of" "common.crt" OR "ca.crt"
+intitle:"index of" "proxy.pac" OR "proxy.pac.bak"
+intitle:"index of" "global.asa"
+inurl:main_login.html intitle:Netgear
+intitle:"index of" "cctv"
+intitle:"index of" "cvsweb.cgi"
+intitle:"index of" "vpn-config.*"
+intitle:"index of" "owncloud/config/*"
+intitle:"index of" "iredadmin/*"
+intitle:"index of" default.rdp
+intitle: "index of" "MySQL-Router"
+site:*/membersarea intitle:"login"
+intitle:"Printer Status" AND inurl:"/PrinterStatus.html"
+intitle:"index of" cvsroot
+inurl:"/English/pages_WinUS/" AND intitle:"Top page"
+intitle:"index of" cvsweb.conf
+intitle:"index of" "db.connection.js"
+intitle:NetworkCamera intext:"Pan / Tilt" inurl:ViewerFrame
+intitle:"webcamXP 5" inurl:8080 'Live'
+site:*/adfs/ls/ intitle:"Sign In"
+intitle:("Solr Admin") AND intext:("Dashboard" AND "Corporation")
+intitle:("Solr admin page") AND intext:("Make a Query")
+inurl:8080/webinterface intitle:"crushftp"
+intitle:ThingsBoard inurl:8080/dashboard
+intitle:traefik inurl:8080/dashboard
+intitle:"index of" "mysql.properties"
+intitle:"Index of" dbconnect.inc
+intitle:Grapher AND inurl:sensorlist.htm
+intitle:"index of" database.yml
+intitle:"index of" "passwords.yml"
+intitle:"index of" "configuration.yml"
+intitle:"index of" "credentials.yml"
+filetype:psp intitle:"Motorola - FX9500"
+intitle:("Mini Shell") AND intext:("Upload File")
+intitle:("Index of") AND intext:("c99.txt" OR "c100.txt")
+intitle:"index of" "backup.bak"
+intitle:"index of" "settings.yml"
+intitle:"index of" "backup.yml"
+intitle:"index of" "secrets.yml"
+intitle:"index of" "jwt-auth"
+intitle:"index of" "/concrete/Authentication"
+intitle:"index of" service.grp
+intitle:"index of" "metadata"
+intitle:"index of" inurl:wp-json embedurl?
+intitle:"index of" "powered by apache " "port 80"
+intitle:"index of" "apache-log-parser" "Port 80"
+intitle:"index of" "maven-metadata.xml" "Port 80"
+intitle:"(SSI Web Shell)" AND intext:"(ls -al)"
+intitle:"index of" "config.py"
+intitle:"Outlook Web App" inurl:"/owa/auth" logon ext:aspx
+intitle:"index of" "access_token"
+intitle:"index of" "settings.py"
+intitle:"index of" accounts.xml

@@ -1,0 +1,94 @@
+inurl:"q=user/password"
+inurl:"/user/register" "Powered by Drupal" -CAPTCHA -"Access denied"
+inurl:"index.php?option=com_joomanager"
+inurl:/proc/self/cwd
+"dirLIST - PHP Directory Lister" "Banned files: php | php3 | php4 | php5 | htaccess | htpasswd | asp | aspx" "index of" ext:php
+allintext:Copyright Smart PHP Poll. All Rights Reserved. -exploit
+allinurl:moadmin.php -google -github
+inurl:/elfinder/elfinder.html+intitle:"elFinder 2.0"
+inurl:CHANGELOG.txt intext:drupal intext:"SA-CORE" -intext:7.32 -site:github.com -site:drupal.org
+inurl:robots.txt intext:CHANGELOG.txt intext:disallow ext:txt -site:github.com
+ext:cgi inurl:cgi-bin intext:#!/bin/bash
+"OpenSSL" AND "1.0.1 Server at" OR "1.0.1a Server at" OR "1.0.1b Server at" OR "1.0.1c Server at" OR "1.0.1d Server at" OR "1.0.1e Server at" OR "1.0.1f Server at"
+inurl:"/reports/rwservlet" intext:"Oracle"
+inurl:"struts" filetype:action
+inurl:.php? intext:CHARACTER_SETS,COLLATIONS, ?intitle:phpmyadmin
+intext:SQL syntax & inurl:index.php?=id & inurl:gov & inurl:gov
+inurl:/wp-content/w3tc/dbcache/
+intext: intext: intext: intext: intext:
+intitle:"-N3t" filetype:php undetectable
+intitle:awen+intitle:asp.net
+inurl:.php intitle:- BOFF 1.0 intext:[ Sec. Info ]
+filetype:php inurl:tiki-index.php +sirius +1.9.*
+filetype:php inanchor:c99 inurl:c99 intitle:c99shell -seeds -marijuana
+inurl:php intitle:"Cpanel , FTP CraCkeR"
+intitle:#k4raeL - sh3LL
+inurl:view.php?board1_sn=
+intitle:m1n1 1.01
+intitle:Locus7shell intext:"Software:"
+intitle:"[EasyPHP] - Administration"
+MySQL: ON MSSQL: OFF Oracle: OFF MSSQL: OFF PostgreSQL: OFF cURL: ON WGet: ON Fetch: OFF Perl: ON
+intitle:cyber anarchy shell
+inurl:/vb/install/upgrade.php
+inurl:/vb/install/install.php
+"CGI-Telnet Unit-x Team Connected to *.com" OR "CGI-Telnet Unit-x Team Connected to"
+"www.*.com - c99shell" OR "www.*.net - c99shell" OR "www.*.org - c99shell"
+"r57shell 1.4"
+"safe_mode: * PHP version: * cURL: * MySQL: * MSSQL: * PostgreSQL: * Oracle: *"
+"[ phpinfo ] [ php.ini ] [ cpu ] [ mem ] [ users ] [ tmp ] [ delete ]"
+"r57shell"
+inurl:"read.php?datespan="
+intitle:"A Better ASP User Gallery"
+allinurl: In YoUr Dream Lamerz
+allinurl: op=viewslink&sid=
+"intitle:t3al shmeh"
+: inurll ', -font => '{Verdana} 8 bold') ->pack ( -side => "top" , -anchor => 'e' ) ;
+http://www.google.com/search?q=inurl%3Aindex.php%3Fpagedb%3Drss
+intitle:"Uploader - Uploader v6" -pixloads.com
+intitle:"MvBlog powered"
+intitle:"Horde :: My Portal" -"[Tickets"
+inurl:rpSys.html
+filetype:pl intitle:"Ultraboard Setup"
+"Welcome to Administration" "General" "Local Domains" "SMTP Authentication" inurl:admin
+XOOPS Custom Installation
+"you can now password" | "this is a special page only seen by you. your profile visitors" inurl:imchaos
+"set up the administrator user" inurl:pivot
+"html allowed" guestbook
+"Powered by: vBulletin Version 1.1.5"
+inurl:"/NSearch/AdminServlet"
+inurl:servlet/webacc
+"There are no Administrators Accounts" inurl:admin.php -mysql_fetch_row
+intitle:"Mail Server CMailServer Webmail" "5.2"
+inurl:newsdesk.cgi? inurl:"t="
+(inurl:/shop.cgi/page=) | (inurl:/shop.pl/page=)
+inurl:aol*/_do/rss_popup?blogID=
+natterchat inurl:home.asp -site:natterchat.co.uk
+intitle:phpMyAdmin "Welcome to phpMyAdmin ***" "running on * as root@*"
+intitle:phpMyAdmin "Welcome to phpMyAdmin ***" "running on * as root@*"
+"ftp://" "www.eastgame.net"
+intext:"Warning: * am able * write ** configuration file" "includes/configure.php" -Forums
+allinurl:"index.php" "site=sglinks"
+inurl:"index.php?module=ew_filemanager"
+("Indexed.By"|"Monitored.By") hAcxFtpScan
+filetype:cgi inurl:"Web_Store.cgi"
+filetype:cgi inurl:"fileman.cgi"
+"Welcome to the Prestige Web-Based Configurator"
+filetype:php inurl:vAuthenticate
+intitle:"Samba Web Administration Tool" intext:"Help Workgroup"
+inurl:pls/admin_/gateway.htm
+intitle:"Gateway Configuration Menu"
+allinurl:install/install.php
+"Select a database to view" intitle:"filemaker pro"
+allinurl:intranet admin
+"Welcome to PHP-Nuke" congratulations
+inurl:footer.inc.php
+inurl:info.inc.php
+intitle:osCommerce inurl:admin intext:"redistributable under the GNU"intext:"Online Catalog" -demo -site:oscommerce.com
+inurl:ManyServers.htm
+intitle:"Gallery in Configuration mode"
+intitle:"Terminal Services Web Connection"
+"YaBB SE Dev Team"
+inurl:search.php vbulletin
+intitle:"Remote Desktop Web Connection"
+"Welcome to Intranet"
+inurl:shop "Hassan Consulting's Shopping Cart Version 1.18"

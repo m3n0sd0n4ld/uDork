@@ -1,0 +1,130 @@
+intitle:"Apache2 Ubuntu Default Page: It works"
+intitle:"IIS Windows Server" -inurl:"IIS Windows Server"
+inurl:/server-status + "Server MPM:"
+inurl:phpinfo.php intext:build 2600
+intext:"Brought to you by eVetSites"
+inurl:OrganizationChart.cc
+intext:"Powered by GetSimple" -site:get-simple.info
+inurl:jsmol.php
+intitle:"WAMPSERVER homepage" "Server Configuration" "Apache Version"
+"Powered by BOINC"
+"Proudly created with Wix.com"
+"I have been invoked by servletToJSP"
+intext:" - 2019 Cott Systems, Inc."
+intitle:Test Page for the Nginx HTTP Server on Fedora
+"Powered by vShare"
+intext:"Powered by Abyss Web Server"
+intitle: "Welcome to nginx!" + "Thank you for using nginx."
+intitle:livezilla "Server Time"
+intitle:"Sucuri WebSite Firewall - Access Denied"
+intext:"Powered by phpSQLiteCMS" | intitle:"phpSQLiteCMS - A simple & lightweight CMS"
+"This server is operated by OpenX."
+intext:"Powered by (Quantum | Quantum CMS | CMS)
+intext:"Powered by Nesta"
+Coldbox | contentbox | commandbox "Powered by ContentBox"
+intext:"Powered by Typesetter"
+intext:"Powered by Sentora" -github.com
+inurl:/_hcms/
+inurl:tests/mocks intext:autoloader
+intitle:HTTP Server Test Page powered by CentOS
+intitle:"apache tomcat/" "Apache Tomcat examples"
+inurl:composer.json codeigniter -site:github.com
+intitle:"apache tomcat/" + "Find additional important configuration information in:"
+"RDServer Product information" | inurl:"/rdagent.jsp"
+intitle:"Apache2 Debian Default Page: It works"
+inurl:rvsindex.php & /rvsindex.php?/user/login
+intitle:"miniProxy"
+intitle:"Axis Happiness Page" "Examining webapp configuration"
+"var miner = new CoinHive" intext:document.domain
+inurl:"server-status" "Server Version: Apache/" "Server Built: " "Server uptime:" "Total accesses" "CPU Usage:"
+"Application Blocked!" "Google bot"
+inurl:readme.md intext:"Laravel"
+inurl:phpmyadmin/themes intext:"pmahomme"
+intext:"Welcome to CodeIgniter!"
+inurl:readme.rst intext:"CodeIgniter"
+intitle:"Index of" "Apache/2.4.7 (Ubuntu) Server"
+intitle:"Index of /" "Proudly Served by Surftown at"
+inurl:/pub/ inurl:_ri_
+inurl:/_catalogs
+ext:svc inurl:wsdl
+inurl:user_guide intext:"CodeIgniter User Guide"
+"PHP Credits" "Configuration" "PHP Core" ext:php inurl:info
+inurl:/php/info.php
+intitle:"HFS" "Server Uptime" "Server time"
+inurl:phpsysinfo/index.php?disp=dynamic
+intitle:"Apache Status" | intext:"Apache Server Status"
+intext:Apache/2.2.29 (Unix) mod_ssl/2.2.29 | intitle:"Index of /"
+inurl:"/web-console/" intitle:"Administration Console"
+filetype:asmx inurl:(_vti_bin|api|webservice)
+intitle:"BadBlue: the file-sharing web server anyone can use"
+intext:"Target Multicast Group" "beacon"
+intitle:"Apache Status" "Apache Server Status for"
+inurl:wl.exe inurl:?SS1= intext:"Operating system:" -edu -gov -mil
+inurl:nnls_brand.html OR inurl:nnls_nav.html
+(intitle:"502 Proxy Error")|(intitle:"503 Proxy Error") "The proxy server could not handle the request" -topic -mail -4suite -list -site:geocrawler.co
+intitle:"Welcome to 602LAN SUITE *"
+intitle:"Welcome To Your WebSTAR Home Page"
+intitle:"Document title goes here" intitle:"used by web search tools" " example of a simple Home Page"
+intitle:"Welcome to the Advanced Extranet Server, ADVX!"
+intitle:"Welcome to Windows Small Business Server 2003"
+yaws.*.server.at
+intitle:"IPC@CHIP Infopage"
+intitle:"Index of *" mode links bytes last-changed name
+intitle:"Test Page for the Apache HTTP Server on Fedora Core" intext:"Fedora Core Test Page"
+Powered.by.RaidenHTTPD intitle:index.of
+(inurl:81-cobalt | inurl:cgi-bin/.cobalt)
+intitle:"welcome to mono xsp"
+inurl:oraweb -site:oraweb.org
+"Netware * Home" inurl:nav.html
+XAMPP "inurl:xampp/index"
+inurl:2506/jana-admin
+allintext:"Powered by LionMax Software" "WWW File Share"
+intitle:"Resin Default Home Page"
+intitle:"Welcome To Xitami" -site:xitami.com
+intitle:"Welcome to Your New Home Page!" "by the Debian release"
+"About Mac OS Personal Web Sharing"
+"Switch to table format" inurl:table|plain
+intitle:"Lotus Domino Go Webserver:" "Tuning your webserver" -site:ibm.com
+intitle:"Directory Listing, Index of /*/"
+intitle:"Object not found!" intext:"Apache/2.0.* (Linux/SuSE)"
+intitle:"Open WebMail" "Open WebMail version (2.20|2.21|2.30) "
+intitle:"error 404" "From RFC 2068 "
+intitle:"Object not found" netware "apache 1.."
+intitle:AnswerBook2 inurl:ab2/ (inurl:8888 | inurl:8889)
+intext:"404 Object Not Found" Microsoft-IIS/5.0
+"powered by" "shoutstats" hourly daily
+intitle:"Shoutcast Administrator"
+"Novell, Inc" WEBACCESS Username Password "Version *.*" Copyright -inurl:help -guides|guide
+"AnWeb/1.42h" intitle:index.of
+"CERN httpd 3.0B (VAX VMS)"
+"JRun Web Server" intitle:index.of
+"MaXX/3.1" intitle:index.of
+"Microsoft-IIS/* server at" intitle:index.of
+"Microsoft-IIS/4.0" intitle:index.of
+"httpd+ssl/kttd" * server at intitle:index.of
+"Red Hat Secure/3.0 server at"
+fitweb-wwws * server at intitle:index.of
+sEDWebserver * server +at intitle:index.of
+"OpenSA/1.0.4" intitle:index.of
+"Red Hat Secure/2.0"
+"OmniHTTPd/2.10" intitle:index.of
+"Microsoft-IIS/6.0" intitle:index.of
+"Microsoft-IIS/5.0 server at"
+intitle:"Page rev */*/*" inurl:"admin
+HTTP_USER_AGENT=Googlebot
+allinurl:".nsconfig" -sample -howto -tutorial
+inurl:domcfg.nsf
+intitle:"300 multiple choices"
+intitle:Snap.Server inurl:Func=
+intitle:"Test Page for Apache"
+allintitle:Netscape FastTrack Server Home Page
+intitle:"Test Page for Apache" "It Worked!"
+"seeing this instead" intitle:"test page for apache"
+intitle:"Test Page for Apache" "It Worked!" "on this web"
+i_index.shtml Ready
+aboutprinter.shtml
+inurl:tech-support inurl:show Cisco
+intitle:"Apache HTTP Server" intitle:"documentation"
+intitle:"Welcome to IIS 4.0"
+"powered by openbsd" +"powered by apache"
+intitle:"Welcome to Windows 2000 Internet Services"
