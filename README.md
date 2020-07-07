@@ -38,14 +38,34 @@ $ ./uDork.sh -h
 
 ### 3.1 - With firefox:
 -- Right mouse button and click on "Inspect".
-
+<br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/3.png)
+<br>
 -- Click on the "Network" tab and select any line that is in the domain "www.messenger.com".
+<br>
 -- Now click on the "Cookies" tab, copy and paste the cookies "c_user" and "xs" into the "uDork.sh" file.
-
+<br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/4.png)
+<br>
+Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
+<br>
+<br>
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
+<br>
 
-	
+### 3.2 - With Google Chrome
+-- Right mouse button and click on "Inspect".
+<br>
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/5.png)
+<br>
+--  Click on the tab "Application", in the left column, look for the section "Cookies", copy and paste the cookies "c_user" and "xs" with their value to the file "uDork.sh".
+<br>
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/6.png)
+<br>
+Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
+<br>
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
+<br>
 
 
 2. Press in your browser control + shift + K (Firefox) o control + shift + J (Google Chrome) to go to console.
