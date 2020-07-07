@@ -8,7 +8,7 @@
 # Sorry for the inconvenience, take care!
 
 
-# Demo new version v.2020.06b
+# Demo new version v.2020.06b (v.2.0 in Bash Scripting)
 I leave you a video of the new version that will soon be available:
 [![Watch the video](https://img.youtube.com/vi/_vOJqtDbhe0/maxresdefault.jpg)](https://youtu.be/_vOJqtDbhe0)
 
@@ -66,15 +66,6 @@ Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
 <br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
 <br>
-
-
-2. Press in your browser control + shift + K (Firefox) o control + shift + J (Google Chrome) to go to console.
-- Write document.cookie in the console and copy the cookies "c_user = content" and "xs = content" to the variable "cookie" inside the file "cookie.py""
-```
-cookie = 'c_user=XXXXXX; xs=XXXXXX'
-```
-Note: If the "xs" cookie does not appear, [follow these steps](https://gist.github.com/sqren/0e4563f258c9e85e4ae1).
-- Save and remember, you must NOT log out of Facebook or you will have to do these steps again.
 
 
 # Use:
