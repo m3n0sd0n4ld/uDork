@@ -3,12 +3,9 @@
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
 
-# Demo new version v.2020.06b (v.2.0 in Bash Scripting)
-[![Watch the video](https://img.youtube.com/vi/_vOJqtDbhe0/maxresdefault.jpg)](https://youtu.be/_vOJqtDbhe0)
-
 # Description:
 
-uDork is a script written in Bash that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
+uDork is a script written in Bash Scripting that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
 
 uDork does NOT make attacks against any server, it only uses predefined dorks and/or official lists from exploit-db.com (Google Hacking Database: https://www.exploit-db.com/google-hacking-database).
 
