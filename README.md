@@ -1,5 +1,5 @@
 # uDork - Google Hacking Tool
-# New functional version: v.2.0
+### New functional version: v.2.0
 
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
