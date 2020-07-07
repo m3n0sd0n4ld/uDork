@@ -66,8 +66,6 @@ Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
 
 ## Example of searching pdf files
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/8.png)
-<br>
-MORE RESULTS...
 
 ## Example of searching routes with the word "password"
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/9.png)
@@ -77,3 +75,5 @@ MORE RESULTS...
 
 ## Example of use Dorks Massive 
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/11.png)
+<br>
+MORE RESULTS...
