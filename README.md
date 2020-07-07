@@ -67,6 +67,9 @@ Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
 ## Example of searching pdf files
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/8.png)
 
+## Example of a search for a list of default extensions.
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/12.png)
+
 ## Example of searching routes with the word "password"
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/9.png)
 
