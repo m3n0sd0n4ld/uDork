@@ -14,32 +14,41 @@ I leave you a video of the new version that will soon be available:
 
 # Description:
 
-uDork is a script written in Python that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
+uDork is a script written in Bash that uses advanced Google search techniques to obtain sensitive information in files or directories, find IoT devices, detect versions of web applications, and so on.
 
 uDork does NOT make attacks against any server, it only uses predefined dorks and/or official lists from exploit-db.com (Google Hacking Database: https://www.exploit-db.com/google-hacking-database).
-
-# You need to have goop installed
-```
-pip3 install goop
-```
 
 # Download and install:
 ```
 $ git clone https://github.com/m3n0sd0n4ld/uDork
 $ cd uDork
-- Open the file and write inside this line:
+$ chmod +x uDork.sh
+- Open the file "uDork.sh" and write inside this line:
 ```
-cookie = 'YOUR FACEBOOK COOKIES HERE'
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
 ```
-$ python3 uDork.py -h
+$ ./uDork.sh -h
 ```
-# Important!!!
-- For the tool to work, you must configure uDork with your Facebook cookie in the file `cookie.py`.
-- You must also be logged in to Facebook on the computer you are using uDork WITHOUT logging out.
 
 ## Steps to obtain the cookie and configure the cookie
-- Login to facebook.com
-- Press in your browser control + shift + K (Firefox) o control + shift + J (Google Chrome) to go to console.
+1. Login to facebook.com
+2. Now we will access www.messenger.com (It is the Facebook messaging app) and click on the "Continue as..." button.
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/2.png)
+3. Once we're in, all we have to do is get the two cookies we need to make uDork work.
+
+### 3.1 - With firefox:
+-- Right mouse button and click on "Inspect".
+
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/3.png)
+-- Click on the "Network" tab and select any line that is in the domain "www.messenger.com".
+-- Now click on the "Cookies" tab, copy and paste the cookies "c_user" and "xs" into the "uDork.sh" file.
+
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/4.png)
+
+	
+
+
+2. Press in your browser control + shift + K (Firefox) o control + shift + J (Google Chrome) to go to console.
 - Write document.cookie in the console and copy the cookies "c_user = content" and "xs = content" to the variable "cookie" inside the file "cookie.py""
 ```
 cookie = 'c_user=XXXXXX; xs=XXXXXX'
@@ -234,10 +243,6 @@ https://www.nasa.gov/privacy/PIA-ODIN-server.html
 
 MORE RESULTS...
 ```
-
-# Thanks:
-
-Thank s0md3v for goop, very good job! https://github.com/s0md3v/goop
 
 
 
