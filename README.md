@@ -39,7 +39,7 @@ $ ./uDork.sh -h
 <br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/4.png)
 <br>
-Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
+Thus: cookies="c_user=XXXXXX; xs=XXXXXX;"
 <br>
 <br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
@@ -54,7 +54,7 @@ Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
 <br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/6.png)
 <br>
-Thus: cookie="c_user=XXXXXX; xs=XXXXXX;"
+Thus: cookies="c_user=XXXXXX; xs=XXXXXX;"
 <br>
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
 <br>
