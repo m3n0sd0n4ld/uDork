@@ -73,7 +73,7 @@ echo '======================== OPCIONES ========================
  -g <dork_name> : Attack a site with a predefined list of dorks. Review list <-l>. 
  -l : Shows the list of predefined dorks (Exploit-DB).
  -f <custom_list> : Use your own personalized list of dorks.
- -p <number> : Number of pages to search in Google. (By default 5 pages).
+ -p <number> : Number of pages to search in Google. (By default 1 pages).
  -o <name_file> : Export results to a file.
 
 ======================== EXAMPLES ========================
