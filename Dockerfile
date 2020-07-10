@@ -1,5 +1,4 @@
 FROM bash
-MAINTAINER interhack
 
 RUN apk update && apk add --no-cache curl git ncurses perl perl-utils make
 RUN ln -s /usr/local/bin/bash /bin/bash
