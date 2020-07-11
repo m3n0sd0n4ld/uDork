@@ -59,6 +59,13 @@ Thus: cookies="c_user=XXXXXX; xs=XXXXXX;"
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/1.png)
 <br>
 
+# Docker version:
+```
+$ git clone https://github.com/m3n0sd0n4ld/uDork
+$ cd uDork
+$ docker build -t udork .
+$ docker run --rm -it -e c_user=XXXXXXXXX -e xs=XXXXXXXXX udork -h
+```
 
 # Use:
 
