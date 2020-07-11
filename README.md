@@ -60,6 +60,9 @@ Thus: cookies="c_user=XXXXXX; xs=XXXXXX;"
 <br>
 
 # Docker version:
+## Acknowledgement
+Twitter: [@interh4ck](https://twitter.com/interh4ck)
+GitHub:(https://github.com/interhack86)
 ```
 $ git clone https://github.com/m3n0sd0n4ld/uDork
 $ cd uDork
