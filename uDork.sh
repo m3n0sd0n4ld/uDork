@@ -66,7 +66,7 @@ menu(){
 echo " ./uDork.sh <Domain/IP> [option] <string> / all"
 echo ""
 echo '======================== OPCIONES ========================
- -e <extensión> / <all> : Search files by extension. Use 'all' to find the list extension.
+ -e <extension> / <all> : Search files by extension. Use 'all' to find the list extension.
  -s <text> / <all> : Find text in website content.
  -u <string> / <all> : Locate text strings within the URL.
  -t <string> / <all> : Lists text string in site title.
