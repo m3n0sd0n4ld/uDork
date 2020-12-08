@@ -128,3 +128,14 @@ intitle:"Apache HTTP Server" intitle:"documentation"
 intitle:"Welcome to IIS 4.0"
 "powered by openbsd" +"powered by apache"
 intitle:"Welcome to Windows 2000 Internet Services"
+inurl:RichWidgets/Popup_Upload.aspx
+intitle:"Vulnerability Report" "Critical" ext:pdf
+intitle:"Wing FTP Server - Web"
+intext:"Powered By Gila CMS"
+intitle:"index of" "shell.php"
+site: target.com ext:action | ext:struts | ext:do
+intitle:"index of" "filemail.pl"
+intitle:"index of" "AT-admin.cgi"
+intext:"(c) GUnet 2003-2007"
+inurl:/+CSCOE+/logon.html
+"Powered by Jira Service Desk"

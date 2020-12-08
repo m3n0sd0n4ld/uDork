@@ -103,3 +103,12 @@ inurl:sitebuildercontent
 "Chatologica MetaSearch" "stack tracking:"
 "supplied argument is not a valid MySQL result resource"
 "Error Diagnostic Information" intitle:"Error Occurred While"
+intext:"Error Occurred While Processing Request"
+intitle:"index of" "stacktrace.log"
+intitle:"index of" "my-errors.log" OR "my-errors.logs"
+intitle:"index of" errors.log
+inurl:"index.php?id=" intext:"Warning: mysql_num_rows()"
+inurl:"/WebResource.axd?d=" AND intext:Error
+inurl:("/storage/logs/laravel.log") AND intext:("local.ERROR" | "NULL.ERROR" | "EMERGENCY:")
+intext:"TCPDFtcpdf.php on line 17778" -stackoverflow -wordpress -github
+intext:"sf_app" + "frontend sf_app_base_cache_dir:"

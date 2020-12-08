@@ -440,3 +440,106 @@ sNC-RZ30 HOME
 intitle:flexwatch intext:"Home page ver"
 intitle:"View and Configure PhaserLink"
 inurl:indexFrame.shtml Axis
+"System" + "Toner" + "Input Tray" + "Output Tray" inurl:cgi
+intitle:"NetCamXL*"
+intitle:"NetCamSC*"
+intitle:"Agent web client: Phone Login"
+intext:"Connection" AND "Network name" AND " Cisco Meraki cloud" AND "Security Appliance details"
+inurl: inurl:"view.shtml" ext:shtml
+"change the Administrator Password." intitle:"HP LaserJet" -pdf
+inurl:/Jview.htm + intext:"Zoom :"
+inurl:"/cgi-bin/guestimage.html" "Menu"
+inurl:"view.shtml" "Network"
+inurl:"view.shtml" "camera"
+inurl:/Jview.htm + "View Video - Java Mode"
+inurl:/homej.html?
+inurl:/index.html?size=2&mode=4
+inurl: 1051/viewer/live/index.html?lang=en
+intitle:"NetCamSC*" | intitle:"NetCamXL*" inurl:index.html
+inurl:set_config_password.html
+inurl:/8080 "windows" "live view"
+inurl:"webArch/mainFrame.cgi" + "Web Image Monitor"
+"Pop-up" + "Live Image" inurl:index.html
+inurl:"live/cam.html"
+inurl:/CgiStart?page
+inurl:"/viewer/live.html"
+inurl:"/viewer/live/index.html"
+intitle:"Rockwell Automation" inurl:"index.html" "Device Name"
+inurl:8080/view/viewer_index.shtml?id= -site:*.com
+inurl:/presentation/html/top/index.html
+intitle:"Miniweb Start Page"
+allintitle:"Welcome to the Web-Based Configurator"
+inurl:"view.shtml" "Network Camera"
+inurl:/config/cam_portal.cgi "Panasonic"
+intitle:"Tuxedo Connected Controller"
+inurl:.*eservices/login
+intitle:"UPS Status" "Status" inurl:/host
+"Camera Live Image" inurl:"guestimage.html"
+intitle:"webcam" inurl:login
+inurl:8081/ "Pan, Tilt & Zoom"
+"HP LaserJet" inurl:"SSI/index.htm"
+intext:"Frame rate" inurl:/home/homej.html
+inurl:/home/homej.html
+intext:"Device Name" | intext:"Host Name" inurl:mainFrame.cgi
+inurl:axis-cgi/mjpg/video swf
+inurl:"/general/status.html"
+inurl:/ViewerFrame? intitle:"Network Camera NetworkCamera"
+inurl:axis-cgi/jpg
+inurl /view.shtml intext:"Airport"
+intitle:"SFXAdmin - sfx_global" intext:"Login Form"
+inurl:/base/main_login.html intext:"Login"
+inurl:/sws/index.html
+inurl:/jobq.htm AND intext:"ApeosPort-V"
+inurl:index.shtml
+allinurl:top.htm?Currenttime
+intitle:"HP ALM" "Application Lifecycle Management" inurl:/qcbin/ -ext:PDF
+intitle:"WEBCAM 7 " -inurl:/admin.html
+site:*/EWS/Exchange.asmx
+inurl:/db.php?path_local=
+inurl:/gmap.php?id=
+intitle:"WeatherLinkIP Configuration"
+intitle:"Kyocera Command Center" inurl:index.htm
+intitle:"Internet Services" inurl:default.htm intext:"FUJI XEROX"
+inurl:8080/dashboard.php
+inurl:8080/dashboard intitle:Graphite Dashboard
+inurl:/index.htm intext:"Oki Data Corporation"
+inurl:mainFrame.cgi intext:"RICOH"
+inurl:/?MAIN=DEVICE intitle:TopAccess intext:Device
+inurl:sws/index.html AND intext:"Model Name" AND intext:"Serial Number"
+inurl:/main.html intext:SHARP AND intext:MX-*
+inurl:/dana-cached/sc/
+inurl:/dana/home/ filetype:cgi
+intitle:"index of" "cvsweb.cgi"
+inurl:./sws/index.sws
+inurl:/frameprop.htm
+inurl:SSI/index.htm
+inurl:"/English/pages_WinUS/" AND intitle:"Top page"
+intitle:"Printer Status" AND inurl:"/PrinterStatus.html"
+inurl:/HDDReplay.html
+inurl:cgistart
+inurl:view.shtml
+inurl:/live.htm intext:"M-JPEG"|"System Log"|"Camera-1"|"View Control"
+intitle:NetworkCamera intext:"Pan / Tilt" inurl:ViewerFrame
+intitle:("Solr admin page") AND intext:("Make a Query")
+inurl:axis-cgi/mjpg/video.cgi
+intitle:("Solr Admin") AND intext:("Dashboard" AND "Corporation")
+intitle:"webcamXP 5" inurl:8080 'Live'
+inurl:8000 intext:"Copyright CANON INC. 2012"
+intext:"EWS Data Collection and Use"
+inurl:hp/device/deviceinformation
+intitle:ThingsBoard inurl:8080/dashboard
+filetype:psp intitle:"Motorola - FX9500"
+inurl:"view/index.shtml"
+inurl:"MultiCameraFrame?Mode=Motion"
+"VB Viewer" inurl:/viewer/live/ja/live.html
+intitle:"IP CAMERA Viewer" intext:"setting | Client setting"
+inurl:"nobody/loginQuick.htm"
+site:*/cgi-bin/webproc intext:"username"
+inurl:/swagger/index.html
+intext:"Security is Off" intitle:"Namenode information"
+"Firmware Version" intitle:"iLO" ProLiant Login -hpe.com -update
+intitle:rsview32 ext:asp
+intitle:"WSO2 Management Console"
+inurl:"/index.php?enter=guest"
+intitle:"Home - Mongo Express"
+inurl:"8080/dashboard/" intitle:"Dashboard"

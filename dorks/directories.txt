@@ -254,3 +254,112 @@ index.of.password
 index.of.winnt
 index.of.secret
 "Index of /backup"
+/etc/config + "index of /" /
+/etc/certs + "index of /" */*
+intitle:"index of" inurl:admin/download
+intitle:"index of" "dump.sql"
+ssh_host_dsa_key.pub + ssh_host_key + ssh_config = "index of / "
+"index of" inurl:database ext:sql | xls | xml | json | csv
+intitle:"index of" "*.cert.pem" | "*.key.pem"
+intitle:index of .git/hooks/
+"-- Dumping data for table `admin`" | "-- INSERT INTO `admin`" "VALUES" ext:sql | ext:txt | ext:log | ext:env
+intitle:"index of" "WebServers.xml"
+inurl: /.git
+inurl:8080 + intext:"httpfileserver 2.3"
+inurl:node_modules/mqtt/test/helpers/
+intitle: "Index of" inurl:admin/uploads
+intitle:"index of" "server.crt" | "server.csr"
+intitle:"index of" "/CFIDE/" intext:"administrator"
+"index of" "mysql.sh"
+intitle:"index of" "slapd.conf"
+intitle:"index of" "/system.log" | "/system.logs"
+intitle:"Everything" inurl:C:Windows
+"index of" "email.ini"
+intitle:"index of" "/app.log" | "/app.logs"
+"-- Dumping data for table * " ext:sql | ext:xls intext:db | intext:database | intext:password | username
+"-- Dumping data for table `users` | `people` | `member`" ext:sql | ext:txt | ext:log | ext:env
+GitLab ssh.log ext:log
+ext:reg [HKEY_CURRENT_USERSoftwareSimonTathamPuTTYSshHostKeys]
+"index of" "performance_schema"
+"index of" "users.ibd"
+"-- PostgreSQL database dump complete" ext:sql | ext:txt | ext:log | ext:env
+"ws_ftp.log" ext:log
+"-- Dump completed" ext:sql | ext:txt | ext:log
+intitle:"index of" "firewall.log" | "firewall.logs"
+intitle:"index of" "/000~ROOT~000/"
+"Share Link" inurl:/share.cgi?ssid=
+intitle:"index of" /lsass.exe
+Index: /wp-includes/Text/Diff
+intitle:"index of" /var/logs filetype:'"log | txt | csv"
+intitle:"Index of /" +.htaccess.old
+intitle:"index of" "/root/etc/security/"
+intitle:"Index of c:xampp"
+intitle:"index of" "/home/ROOT_PATH/"
+"Index of" "/monitoring"
+Google Dork : Index of: /services/aadhar card/
+intitle:"index of" "app.log"
+intitle:"index of" "ssh_host_ecdsa_key"
+Index of: /services/pancard/
+inurl:member filetype:xls
+intitle:"index of" "oauth-private.key"
+inurl:_vti_pvt/service.pwd
+inurl:admin/data* intext:index of
+intext:"INTERNAL USE ONLY" ext:doc OR ext:pdf OR ext:xls OR ext:xlsx
+intitle:"index of" "admin/sql/"
+intitle:"index of" "survey.cgi"
+"index of" "svg"
+"Index of" "sass-cache"
+index of logs.tar
+"index of" "fileadmin"
+intitle:"Dashboard [Jenkins]"
+intitle:"index of" "uploads.old"
+intitle:"index of" inurl:ftp intext:admin
+allintitle: sensitive ext:doc OR ext:xls OR ext:xlsx
+intitle:"index of" "system/config"
+intitle:"index of" "admin/config"
+"index of" "/config/sql"
+intitle:"index of" "api/admin"
+intitle:"index of" "tinyfilemanager.php"
+intitle:"index of" "test/storage/framework/sessions/"
+intitle:"index of" "symfony/config"
+intitle:"index of" "/admin/backup"
+intitle:"index of" "graphql/subscription"
+intitle:"index of" "admin/json"
+intitle:"index of" "/admin_backup"
+intitle:"index of" "git-jira-log"
+intitle:"index of" db.frm
+intitle:"index of" "/db_backups/"
+intitle:"index of" "common.crt" OR "ca.crt"
+intitle:"index of" "global.asa"
+intitle:"index of" "proxy.pac" OR "proxy.pac.bak"
+intitle: "index of" "MySQL-Router"
+intitle:"index of" "iredadmin/*"
+intitle:"index of" "cctv"
+intitle:"index of" "owncloud/config/*"
+intitle:"index of" cvsroot
+intitle:"index of" "/concrete/Authentication"
+intitle:"index of" "jwt-auth"
+intitle:"index of" inurl:wp-json embedurl?
+intitle:"index of" "maven-metadata.xml" "Port 80"
+intitle:"index of" "metadata"
+intitle:"index of" "apache-log-parser" "Port 80"
+intitle:"index of" "config.py"
+intext:"index of /" ".composer-auth.json"
+inurl:"/includes/api/" intext:"index of /"
+inurl:"/includes/OAuth2" intext:"index of /"
+inurl:concrete/config/
+intitle:"index of" "htdocs.zip"
+intitle:"index of" "*php.swp"
+intitle:index.of "db.zip"
+intitle:index.of "backwpup"
+intitle:"index of" "/Cloudflare-CPanel-7.0.1"
+-pool intitle:"index of" wget-log -pub
+intitle:"index of" "sms.log"
+intitle:"index of" "ftp.log"
+intitle:"index of" api_key OR "api key" OR apiKey -pool
+intitle:"index of" domain.key -public
+intitle:"index of" .zshrc~ OR .zshrc OR .zshenv OR .zshenv~ -pool -public
+intitle:"index of" .oracle_jre_usage/
+-pub -pool intitle:"index of" vagrantfile -"How to"
+-pub -pool intitle:"index of" squirrelmail/
+"key" OR key.jar intitle:"index of" webstart

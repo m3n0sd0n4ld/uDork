@@ -59,3 +59,8 @@ filetype:inc inc intext:setcookie
 filetype:cnf my.cnf -cvs -example
 filetype:php inurl:"viewfile" -"index.php" -"idfil
 intitle:"Index of /" modified php.exe
+Dork: "Index of" "upload_image.php"
+Dork: "index of" "Production.json"
+index.of.?.frm
+intitle:"index of" "nrpe.cfg"
+index of admin/fckeditor/editor/filemanager/

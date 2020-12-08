@@ -19,3 +19,23 @@ inurl:admin filetype:asp inurl:userlist
 inurl:admin inurl:userlist
 intitle:index.of .bash_history
 intitle:index.of .sh_history
+intitle:"index of" "db.properties" | "db.properties.BAK"
+intitle:"index of" "credentials.xml" | "credentials.inc" | "credentials.txt"
+"'dsn: mysql:host=localhost;dbname=" ext:yml | ext:txt "password:"
+jdbc:sqlserver://localhost:1433 + username + password ext:yml | ext:java
+intitle:"index of" "password.yml
+intitle:"index of" "sitemanager.xml" | "recentservers.xml"
+intitle:"index of" "filezilla.xml"
+"DefaultPassword" ext:reg "[HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionWinlogon]"
+filetype:csv intext:"Secret access key"
+inurl:user intitle:index of ext:sql | xls | xml | json | csv
+jdbc:mysql://localhost:3306/ + username + password ext:yml | ext:java -git -gitlab
+intitle:"index of" "/parameters.yml*"
+"CREATE ROLE" + "ENCRYPTED PASSWORD" ext:sql | ext:txt | ext:ini -git -gitlab
+File contains Sensitive Information
+"index of" "users.frm"
+intitle:"index of" "tomcat-users.xml"
+intitle:"index of" "/ftpusers"
+intitle:"index of" "users.sql"
+allintext:username filetype:log
+intitle:"index of" service.grp
