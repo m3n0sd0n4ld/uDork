@@ -18,59 +18,63 @@ fileReport="$5"
 page=$6
 numPage=$7
 tiempo="2s"
-maximo_lineas=700
+maximo_lineas=900
+BaseDir=$(dirname $0)
+reportDir="/reports/"
+msgMassiveView="off"
 
 # Colors
 cRojo=`tput setaf 1`
 cVerde=`tput setaf 2`
 cAmarillo=`tput setaf 3`
+cAzul=`tput setaf 4`
 
 # Effects
 cBold=`tput bold`
 cNormal=`tput sgr0` #No color, No bold
 
 # Dorks
-d_filetype="dorks/filetype.txt"
-d_intext="dorks/intext.txt"
-d_inurl="dorks/inurl.txt"
-d_intitle="dorks/intitle.txt"
-d_global="dorks/global.txt"
-d_admin="dorks/admin.txt"
-d_directories="dorks/directories.txt"
-d_usernames="dorks/usernames.txt"
-d_passwords="dorks/passwords.txt"
-d_webservers="dorks/webservers.txt"
-d_vulnerable_files="dorks/vulnerable_files.txt"
-d_vulnerable_servers="dorks/vulnerable_servers.txt"
-d_error_messages="dorks/error_messages.txt"
-d_vulnerable_networks="dorks/vulnerable_networks.txt"
-d_portal_logins="dorks/portal_logins.txt"
-d_devices="dorks/devices.txt"
+d_filetype="$BaseDir/dorks/filetype.txt"
+d_intext="$BaseDir/dorks/intext.txt"
+d_inurl="$BaseDir/dorks/inurl.txt"
+d_intitle="$BaseDir/dorks/intitle.txt"
+d_global="$BaseDir/dorks/global.txt"
+d_admin="$BaseDir/dorks/admin.txt"
+d_directories="$BaseDir/dorks/directories.txt"
+d_usernames="$BaseDir/dorks/usernames.txt"
+d_passwords="$BaseDir/dorks/passwords.txt"
+d_webservers="$BaseDir/dorks/webservers.txt"
+d_vulnerable_files="$BaseDir/dorks/vulnerable_files.txt"
+d_vulnerable_servers="$BaseDir/dorks/vulnerable_servers.txt"
+d_error_messages="$BaseDir/dorks/error_messages.txt"
+d_vulnerable_networks="$BaseDir/dorks/vulnerable_networks.txt"
+d_portal_logins="$BaseDir/dorks/portal_logins.txt"
+d_devices="$BaseDir/dorks/devices.txt"
 
 # Functions
 # Startup logo
-banner_uDork(){
+function banner_uDork(){
 	echo """                                                                
        _____             _    
       |  __ \           | |   
  _   _| |  | | ___  _ __| | __
 | | | | |  | |/ _ \| '__| |/ /
 | |_| | |__| | (_) | |  |   < 
- \__,_|_____/ \___/|_|  |_|\_\ ${cBold}v.2.0
+ \__,_|_____/ \___/|_|  |_|\_\ ${cBold}v.3.0
 	${cBold}by ${cRojo}M3n0sD0n4ld${cNormal} - (${cBold}${cAmarillo}@David_Uton${cNormal})
 """
 separador
 }
 # Menu
-menu(){
+function menu(){
 echo " ./uDork.sh <Domain/IP> [option] <string> / all"
 echo ""
-echo '======================== OPCIONES ========================
+echo '======================== OPTIONS ========================
  -e <extension> / <all> : Search files by extension. Use 'all' to find the list extension.
  -s <text> / <all> : Find text in website content.
  -u <string> / <all> : Locate text strings within the URL.
  -t <string> / <all> : Lists text string in site title.
- -g <dork_name> : Attack a site with a predefined list of dorks. Review list <-l>. 
+ -g <dork_name> / <all> : Attack a site with a predefined list of dorks. Review list "./uDork -l".
  -l : Shows the list of predefined dorks (Exploit-DB).
  -f <custom_list> : Use your own personalized list of dorks.
  -p <number> : Number of pages to search in Google. (By default 1 pages).
@@ -87,8 +91,8 @@ echo '======================== OPCIONES ========================
 '
 }
 # List of predefined dorks
-listado_dorks(){
-	echo "======================== DORKS LISTING ========================"
+function listado_dorks(){
+	echo "============================= DORKS LISTING ============================="
 	echo " admin : Access panels of all kinds (administration, login, CMS, ...)
  directories : Sensitive directories (drupal, wordpress, phpmyadmin ...)
  usernames : Find files containing user names.
@@ -99,24 +103,25 @@ listado_dorks(){
  error_messages : Show error messages.
  vulnerable_networks : Find software data on vulnerable networks.
  portal_logins : List portal logins.
- devices :  Find connected devices (printers, webcams, thermostats, ...)"
+ devices :  Find connected devices (printers, webcams, thermostats, ...)
+ all : Uses all previous dorks automatically (recommend for audits/pentesting)"
 	echo ""
-	echo "======================== EXAMPLES ========================"
+	echo "============================= EXAMPLES ============================="
 	echo " ./uDork.sh host.com -g admin"
 	echo " ./uDork.sh host.com -g portal_logins"
+	echo " ./uDork.sh host.com -g all"
 }
 # Displays tool information in case of error
-banner_error(){
+function banner_error(){
 	echo "Error, missing parameters to be passed." 
 	echo "Type ./uDork.sh -h for more information."
 }
 # Massive message
-msgMassive(){
-   	echo "${cBold}${cRojo}[!]${cNormal} The results will appear below. This may take several minutes, please wait ..."
-	echo ""
+function msgMassive(){
+   	echo -e "${cBold}${cRojo}[!]${cNormal} The results will appear below. This may take several minutes, please wait ...\n"
 }
 # Checking pages
-checkPages(){
+function checkPages(){
 	if [[ $report == "-p" ]] || [[ $page == "-p" ]]; then
 		checkNum='?(-)+([0-9])'
 		if [[ $fileReport == $checkNum ]];then 
@@ -131,7 +136,7 @@ checkPages(){
 	fi
 }
 # Search
-search(){
+function search(){
 	flagEnc=$(echo "$flag" | sed 's/ /%2520/')
 	# Associate rate per share
 	if [[ $action == "-e" ]]; then
@@ -163,7 +168,7 @@ search(){
 	fi
 }
 # URL Encoder/Decoder
-urlencode() {
+function urlencode() {
     old_lc_collate=$LC_COLLATE
     LC_COLLATE=C
     
@@ -178,18 +183,20 @@ urlencode() {
     
     LC_COLLATE=$old_lc_collate
 }
-urldecode(){
+function urldecode(){
 	decoded_url=$(perl -MURI::Escape -e 'print uri_unescape($ARGV[0])' "$resultado")
 	echo "$decoded_url"
 }
 # Shows the result
-banner_resultado(){
+function banner_resultado(){
 	if [[ $resultado > 0 ]]; then
 		if [[ $i == "0" ]] || [[ $flag == "all" ]]; then
 			if [[ $report == "-o" ]]; then
+				checkDirs
 				banner_inicio | tee -a "$fileReport"
 				separador | tee -a "$fileReport"
 			elif [[ $page == "-o" ]]; then
+				checkDirs
 				banner_inicio | tee -a $numPage
 				separador | tee -a $numPage
 			else
@@ -198,9 +205,11 @@ banner_resultado(){
 			fi
 		fi
 		if [[ $report == "-o" ]]; then 
+			checkDirs
 			urldecode $resultado | tee -a "$fileReport"
 			contador
 		elif [[ $page == "-o" ]]; then
+			checkDirs
 			urldecode $resultado | tee -a "$numPage"
 			contador
 		else
@@ -208,36 +217,58 @@ banner_resultado(){
 			contador
 		fi
 	fi
+	# Show messages no results were found
+	if [[ ! $numTotal ]] && [[ ! $count ]]; then
+		echo -e "No results were found. Try harder!"
+	fi
 }
-banner_inicio(){
-	echo "Domain/IP: ${cBold}$url${cNormal}"
-	echo "Find links with: ${cBold}$flag${cNormal}"
+function banner_inicio(){
+	if [[ -n ${listDorks} ]]; then
+		echo -e "\n\nDomain/IP: ${cBold}$url${cNormal}"
+		echo "Find links with: ${cBold}$flag${cNormal}"
+	else
+		echo "Domain/IP: ${cBold}$url${cNormal}"
+		echo "Find links with: ${cBold}$flag${cNormal}"
+	fi
 }
-banner_final(){
+function banner_final(){
 	separador
-	echo "Files ${cRojo}$flag${cNormal} found: ${cBold}${cRojo}$numTotal${cNormal}"
-	echo ""
+	echo -e "Files ${cRojo}$flag${cNormal} found: ${cBold}${cRojo}$numTotal${cNormal}\n"
 }
-contador(){
+function msgReport(){
+	# Checking file
+	if [[ $report == "-o" ]] || [[ $page == "-o" ]] && [[ -f $BaseDir$reportDir$fileReport ]]; then 
+		echo -e "\n${cAzul}${cBold}[+]${cNormal} Report saved in: ${cBold}${BaseDir}${reportDir}${fileReport}${cNormal}"
+	elif [[ $report == "-o" ]] || [[ $page == "-o" ]] && [[ -f $fileReport ]]; then
+		echo -e "\n${cAzul}${cBold}[+]${cNormal} Report saved in: ${cBold}${fileReport}${cNormal}"
+	fi
+}
+function contador(){
 	total=$(echo "$resultado" | wc -l)
 	numTotal=$((numTotal+$total))
 }
 # Line spacer
-separador(){
+function separador(){
 	echo "----------------------------------------------------------------------"
 }
 # Maximum line count dorks list
-max_lineas(){
+function max_lineas(){
 	lineas=$(wc -l ${listDorks} | cut -d " " -f 1)
 	return $lineas
 }
 # Massive mode
-massiveMode(){
+function massiveMode(){
 	max_lineas ${listDorks}
 	if [[ $lineas -gt $maximo_lineas ]]; then
-		echo "The file: ${listDorks} must contain less than $maximo_lineas lines."
+		echo "${cBold}${cRojo}[!]${cNormal} The file: ${listDorks} must contain less than $maximo_lineas lines."
 	else
-		msgMassive
+		if [[ $msgMassiveView == "off" ]]; then
+			msgMassive
+			msgMassiveView="on"
+		fi
+		# Need progress bar
+		count=$lineas
+		current=1
 		while IFS= read -r flag
 		do
 			checkPages
@@ -245,8 +276,11 @@ massiveMode(){
 				search
 				banner_resultado
 			done
+
 			# Report
 			finalReport
+			progressbar ${current} ${count} #update progress bar. TODO:calculate ETA
+			current=$(( current + 1 )) #increment
 			total="0"
 			numTotal="0"
 			# Stopping between requests
@@ -255,7 +289,7 @@ massiveMode(){
 	fi
 }
 # Final report
-finalReport(){
+function finalReport(){
 	if [[ $total -ne "0" ]]; then
 		if [[ $report == "-o" ]]; then
 			banner_final | tee -a "$fileReport"
@@ -267,14 +301,14 @@ finalReport(){
 	fi
 }
 # Cookies Status
-cookiesStatus(){
+function cookiesStatus(){
 	if [[ -z "$cookies" ]]; then
 		echo "You need to set your Facebook cookies for uDork to work. Edit uDork.sh and set your cookies."
 		exit
 	fi
 }
 # Listing
-lista(){
+function lista(){
 	case $flag in
 		directorios )
 			max_lineas $d_directorios
@@ -309,8 +343,79 @@ lista(){
 	esac
 }
 
-# Testing cookies
-cookiesStatus
+# Exit script
+trap ctrl_c INT
+
+function ctrl_c(){
+	echo -e "\n\n${cAmarillo}${cBold}[!]${cNormal} Leaving uDork..."
+	exit 1
+}
+
+# https://github.com/fearside/ProgressBar/blob/master/progressbar.sh
+# something to look at while waiting
+function progressbar {
+        let _progress=(${1}*100/${2}*100)/100
+        let _done=(${_progress}*4)/10
+        let _left=40-$_done
+
+        _done=$(printf "%${_done}s")
+        _left=$(printf "%${_left}s")
+
+		nameDork=$(basename ${listDorks} | cut -d '.' -f1)
+
+		printf "\r${cAmarillo}${cBold}[*]${cNormal} Searching...[${cBold}Dork list: ${cVerde}${nameDork}${cNormal}][${_done// /#}${_left// /-}] ${_progress}%%"
+}
+
+# Full massive dorks
+function fullMassiveDorks(){
+	declare -A dorksList=(
+		[admin]=${d_admin}
+		[directories]=${d_directories}
+		[usernames]=${d_usernames}
+		[passwords]=${d_passwords}
+		[webservers]=${d_webservers}
+		[vulnerable_files]=${d_vulnerable_files}
+		[vulnerable_servers]=${d_vulnerable_servers}
+		[error_messages]=${d_error_messages}
+		[vulnerable_networks]=${d_vulnerable_networks}
+		[portal_logins]=${d_portal_logins}
+		[devices]=${d_devices}
+	)
+
+	# Execute massive dorks
+	for dorkName in "${!dorksList[@]}"; do
+		listDorks="${dorksList[$dorkName]}"
+		withDork="1"
+		
+		# Save report
+		fileReport="${BaseDir}${reportDir}${url}-report-${nameDork}.log"
+		report="-o"
+		
+		massiveMode
+	done
+}
+# CheckDirs
+function checkDirs(){
+	if [[ $report == "-o" ]]; then
+		dirFileReport=$(dirname $fileReport)
+
+	elif [[ $page == "-o" ]]; then
+		dirFileReport=$(dirname $numPage)
+	fi
+
+	if [[ ! -d $dirFileReport ]]; then
+		mkdir -p $dirFileReport
+		if [[ ! -d $dirFileReport ]]; then
+			echo -e "\n\n${cAmarillo}${cBold}[!]${cNormal} It was not possible to create the directory:${cBold}${dirFileReport}${cNormal}"
+		fi
+
+	elif [[ ! -d $BaseDir$reportDir ]]; then
+		mkdir -p $BaseDir$reportDir
+	fi
+}
+
+# Testing cookies && reports
+ cookiesStatus
 
 if [[ -n "$url" ]] || [[ -n "$action" ]] && [[ -n "$flag" ]]; then
 	banner_uDork
@@ -333,6 +438,7 @@ if [[ -n "$url" ]] || [[ -n "$action" ]] && [[ -n "$flag" ]]; then
 			fi
 			# Massive
 			massiveMode
+			msgReport
 		else
 			checkPages
 			for ((i=0;i<=$pages;i++)); do
@@ -342,6 +448,7 @@ if [[ -n "$url" ]] || [[ -n "$action" ]] && [[ -n "$flag" ]]; then
 			
 			# Report
 			finalReport
+			msgReport
 		fi
 	# Google Dorks - Exploit-DB
 	elif [[ "$action" == "-g" ]]; then
@@ -377,6 +484,8 @@ if [[ -n "$url" ]] || [[ -n "$action" ]] && [[ -n "$flag" ]]; then
 		elif [[ "$flag" == "devices" ]]; then
 			listDorks="$d_devices"
 			withDork="1"
+		elif [[ "$flag" == "all" ]]; then
+			fullMassiveDorks
 		else
 			banner_error
 			exit
