@@ -1,5 +1,5 @@
 # uDork - Google Hacking Tool
-### New functional version: v.2.0
+### New functional version: v.3.0
 
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
@@ -80,6 +80,7 @@ $ docker run --rm -it -e c_user=XXXXXXXXX -e xs=XXXXXXXXX udork -h
 
 ## Example of a search for a list of default extensions.
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/12.png)
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/13.png)
 
 ## Example of searching routes with the word "password"
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/9.png)
@@ -89,5 +90,11 @@ $ docker run --rm -it -e c_user=XXXXXXXXX -e xs=XXXXXXXXX udork -h
 
 ## Example of use Dorks Massive 
 ![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/11.png)
-<br>
-MORE RESULTS...
+
+## Example of use All Dorks Massive (Recommend for pentesting/audit) 
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/14.png)
+![Screenshot](https://github.com/m3n0sd0n4ld/uDork/blob/master/images/15.png)
+
+
+# Disclaimer
+This tool requires session cookies from a Facebook account to work. I am NOT responsible for any problems with your account and/or computer.
