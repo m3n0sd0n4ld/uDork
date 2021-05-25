@@ -156,7 +156,7 @@ function search(){
 	fi
 	# Execution
 	if [[ $type == "intext" ]]; then
-		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=${type}%3A${flagEnc}%2520${url}%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
+		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520"${flagEnc}"%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
 	elif [[ $type == "intitle" ]]; then
 		if [[ $withDork == "1" ]]; then
 			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520"${flagEnc}"%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
