@@ -167,22 +167,6 @@ function search(){
 		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520${type}%3A"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 	fi
 }
-# URL Encoder/Decoder
-function urlencode() {
-    old_lc_collate=$LC_COLLATE
-    LC_COLLATE=C
-    
-    local length="${#1}"
-    for (( i = 0; i < length; i++ )); do
-        local c="${1:i:1}"
-        case $c in
-            [a-zA-Z0-9.~_-]) printf "$c" ;;
-            *) printf '%%%02X' "'$c" ;;
-        esac
-    done
-    
-    LC_COLLATE=$old_lc_collate
-}
 # Shows the result
 function banner_resultado(){
 	if [[ $resultado > 0 ]]; then
