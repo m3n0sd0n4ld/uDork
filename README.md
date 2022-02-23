@@ -1,8 +1,14 @@
 # uDork - Google Hacking Tool
-### New functional version: v.3.0
 
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
+
+### New functional version: v.3.1
+## News
+### 23/02/2022
+- Adapting uDork to the programming changes from Facebook to Meta.
+- Removed the Perl library "libany-uri-escape-perl".
+- Speed has been improved, gaining 2 seconds between requests.
 
 # Description:
 
