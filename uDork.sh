@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##################################################################################################
-# 									COOKIES CONFIGURATION										 #
+# 									COOKIES CONFIGURATION 				 						 #
 ##################################################################################################
 # ATENTION!!! Add your cookies as follows:
 # cookies="c_user=xxxxxxxxxxxxxxx; xs=xxxxxxxxxxxxxxxxxx;"
@@ -17,7 +17,7 @@ report=$4
 fileReport="$5"
 page=$6
 numPage=$7
-tiempo="2s"
+tiempo="0s"
 maximo_lineas=900
 BaseDir=$(dirname $0)
 reportDir="/reports/"
@@ -60,7 +60,7 @@ function banner_uDork(){
  _   _| |  | | ___  _ __| | __
 | | | | |  | |/ _ \| '__| |/ /
 | |_| | |__| | (_) | |  |   < 
- \__,_|_____/ \___/|_|  |_|\_\ ${cBold}v.3.0
+ \__,_|_____/ \___/|_|  |_|\_\ ${cBold}v.3.1
 	${cBold}by ${cRojo}M3n0sD0n4ld${cNormal} - (${cBold}${cAmarillo}@David_Uton${cNormal})
 """
 separador
@@ -156,15 +156,15 @@ function search(){
 	fi
 	# Execution
 	if [[ $type == "intext" ]]; then
-		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520"${flagEnc}"%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
+		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 	elif [[ $type == "intitle" ]]; then
 		if [[ $withDork == "1" ]]; then
-			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520"${flagEnc}"%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
+			resultado=$(curl -s --cookie "$cookies" hhttps://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 		else
-			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520${type}%3A"${flagEnc}"%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
+			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520${type}%3A"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 		fi
 	else
-		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https://www.google.com/search?q=site%3A${url}%2520${type}%3A${flagEnc}%26start%3D${i}0 |grep 'url?q=' | cut -d ' ' -f3 | cut -d "=" -f3 | sed 's/\(&am\).*//' | sed '/&gt/d' | sed '/like,/d' | sed '/xpd/d' | sed '/^ *$/d' | sed '/s3v9rd/d')
+		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520${type}%3A"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 	fi
 }
 # URL Encoder/Decoder
@@ -182,10 +182,6 @@ function urlencode() {
     done
     
     LC_COLLATE=$old_lc_collate
-}
-function urldecode(){
-	decoded_url=$(perl -MURI::Escape -e 'print uri_unescape($ARGV[0])' "$resultado")
-	echo "$decoded_url"
 }
 # Shows the result
 function banner_resultado(){
@@ -206,14 +202,14 @@ function banner_resultado(){
 		fi
 		if [[ $report == "-o" ]]; then 
 			checkDirs
-			urldecode $resultado | tee -a "$fileReport"
+			printf "$resultado\n" | tee -a "$fileReport"
 			contador
 		elif [[ $page == "-o" ]]; then
 			checkDirs
-			urldecode $resultado | tee -a "$numPage"
+			printf "$resultado\n" | tee -a "$numPage"
 			contador
 		else
-			urldecode $resultado
+			printf "$resultado\n"
 			contador
 		fi
 	fi
