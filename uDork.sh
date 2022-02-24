@@ -159,7 +159,7 @@ function search(){
 		resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 	elif [[ $type == "intitle" ]]; then
 		if [[ $withDork == "1" ]]; then
-			resultado=$(curl -s --cookie "$cookies" hhttps://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
+			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 		else
 			resultado=$(curl -s --cookie "$cookies" https://developers.facebook.com/tools/debug/echo/?q=https:%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dsite%3A${url}%2520${type}%3A"${flagEnc}"%26start%3D${i}0 | grep 'url?q=' | cut -d ';' -f7 | cut -d '=' -f2 | sed 's/&amp//g' | grep -i ${url})
 		fi
