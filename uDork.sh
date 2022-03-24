@@ -17,7 +17,7 @@ report=$4
 fileReport="$5"
 page=$6
 numPage=$7
-tiempo="0s"
+tiempo="2s"
 maximo_lineas=900
 BaseDir=$(dirname $0)
 reportDir="/reports/"
@@ -186,14 +186,14 @@ function banner_resultado(){
 		fi
 		if [[ $report == "-o" ]]; then 
 			checkDirs
-			printf "$resultado\n" | tee -a "$fileReport"
+			echo "$resultado" | tee -a "$fileReport"
 			contador
 		elif [[ $page == "-o" ]]; then
 			checkDirs
-			printf "$resultado\n" | tee -a "$numPage"
+			echo "$resultado" | tee -a "$numPage"
 			contador
 		else
-			printf "$resultado\n"
+			echo "$resultado"
 			contador
 		fi
 	fi
