@@ -3,8 +3,15 @@
 ###### Author: M3n0sD0n4ld
 ###### Twitter: [@David_Uton](https://twitter.com/David_Uton)
 
-### New functional version: v.3.1
 ## News
+### 11/06/2022
+I have some bad news to give, last week Facebook withdrew the service by which the tool made the requests, unfortunately the tool no longer works.
+
+Sorry, thank you very much to all the users who have been using it, reporting bugs and contributing with new ideas.
+
+Note: I am working on another tool, soon you will have news ;)
+
+
 ### 23/02/2022
 - Adapting uDork to the programming changes from Facebook to Meta.
 - Removed the Perl library "libany-uri-escape-perl".
