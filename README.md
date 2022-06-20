@@ -9,7 +9,7 @@ I have some bad news to give, last week Facebook withdrew the service by which t
 
 Sorry, thank you very much to all the users who have been using it, reporting bugs and contributing with new ideas.
 
-Note: I am working on another tool, soon you will have news ;)
+Note: [I am working on another tool, Say hello to **GooFuzz**!](https://github.com/m3n0sd0n4ld/GooFuzz)
 
 
 ### 23/02/2022
